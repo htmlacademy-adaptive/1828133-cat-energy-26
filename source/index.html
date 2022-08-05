@@ -5,44 +5,36 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
-  <!--В первую очередь, я верстаю страницу для мобильной версии, с прицелом на массовое переиспользование блоков в других версиях (планшет и ноутбук). Некоторые элементы будут иметь базовые стили, которые будут применяться в мобильной версии. Кроме того, эти элементы с модификатором:"-Tablet/Desktop" будут получать другие стили, чтобы выглядеть соотвественно макету. Такие элементы будут отмечены комментарием.-->
-
   <body class="page__body">
-
-
-
 
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image main-header__logo-image--small" src="./img/logo-small.svg" width="33" height="38" alt="Маскот Cat Energy">
-      </a>
+      <div class=" logo-wrapper">
+        <a class="logo-wrapper__link">
+          <img class="logo-image" src="./img/logo-small.svg" width="33" height="38" alt="Маскот Cat Energy">
+        </a>
+      </div>
       <div class="main-header__brand">
-        <div class="brand">
           <b>Cat</b> Energy
-        </div>
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper main-nav__wrapper--mobile">
-          <ul class="main-nav__list">
-
-            <li class="main-nav__list__item">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav-list">
+            <li class="main-nav-list__item">
               <a href="#">
                 Главная
               </a>
             </li>
-
-            <li class="main-nav__list__item">
+            <li class="main-nav-list__item">
               <a href="#">
                 Каталог продукции
               </a>
 
             </li>
-
-            <li class="main-nav__list__item">
+            <li class="main-nav-list__item">
               <a href="#">
                 Подбор программы
               </a>
@@ -62,21 +54,22 @@
           Занялся собой? Займись котом!
         </p>
       </div>
+      <a href="#" class="intro__button">
+        Подобрать программу
+      </a>
     </section>
-    <a href="#" class="intro__button button">
-      Подобрать программу
-    </a>
+
     <!--Картинки которые я вставил в этом и следующем блоке через img, по момему мнению не являются контентными, а значит не будут вставляться через html. Я вставил их, чтобы сайт выглядел посимпатичнее на этапе проверки. Потом эти img будут удалены. Alt у них кстати тоже нет, поэтому валидатор ругается.-->
     <section class="program">
       <div class="program__wrapper">
         <h2 class="visually-hidden">Программы питания</h2>
         <div class="program__card card">
-          <!--program__card-tablet — изменит сетку карточки, картинка уедет вправо-->
           <header class="card__title">
             Похудение
           </header>
-          <img class="card__image" src="./img/program-slim.svg" alt="Грациозная кошка">
-          <!--card__image-tablet — увеличит размер картинки-->
+          <div class="card__image-wrapper card-image-wrapper">
+            <img class="card__image" src="./img/program-slim.svg" alt="Грациозная кошка">
+          </div>
           <p class="card__text">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
@@ -84,12 +77,12 @@
         </div>
 
         <div class="program__card card">
-          <!--program__card-tablet — изменит сетку карточки, картинка уедет вправо-->
           <header class="card__title">
             Набор массы
           </header>
-          <img class="card__image" src="./img/program-pro.svg" alt="Мощный кот">
-          <!--card__image-tablet — увеличит размер картинки-->
+          <div class="card__image-wrapper card-image-wrapper">
+            <img class="card__image" src="./img/program-pro.svg" alt="Мощный кот">
+          </div>
           <p class="card__text">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
@@ -99,48 +92,46 @@
     </section>
     <section class="brief">
       <div class="brief__wrapper">
-        <h2 class="brief__title section-title">Как это работает</h2>
-        <div class="brief__wrapper">
+        <h2 class="brief__title">Как это работает</h2>
           <ul class="brief__list">
-            <li class="brief__item brief-item"><!--Здесь я испытываю затруднение в именовании. Хочу чтобы этот li был элементом списка, но и был самостоятельным элементом.-->
+            <li class="brief__item brief-item">
               <img class="brief-item__image" src="./img/brief-1.svg">
               <div class="brief-item__text">Функциональное питание содержит только полезные питательные вещества.
               </div>
             </li>
-            <li class="brief__item brief-item"><!--Здесь я испытываю затруднение в именовании. Хочу чтобы этот li был элементом списка, но и был самостоятельным элементом.-->
+            <li class="brief__item brief-item">
               <img class="brief-item__image" src="./img/brief-2.svg">
               <div class="brief-item__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </div>
             </li>
-            <li class="brief__item brief-item"><!--Здесь я испытываю затруднение в именовании. Хочу чтобы этот li был элементом списка, но и был самостоятельным элементом.-->
+            <li class="brief__item brief-item">
               <img class="brief-item__image" src="./img/brief-3.svg">
               <div class="brief-item__text">
                 Замените один-два приема обычной еды на наше функциональное питание.
               </div>
             </li>
-            <li class="brief__item brief-item"><!--Здесь я испытываю затруднение в именовании. Хочу чтобы этот li был элементом списка, но и был самостоятельным элементом.-->
+            <li class="brief__item brief-item">
               <img class="brief-item__image" src="./img/brief-4.svg">
               <div class="brief-item__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </div>
             </li>
           </ul>
-        </div>
       </div>
     </section>
     <section class="instance">
       <div class="instance__wrapper">
-        <h2 class="instance__title section-title">Живой пример</h2>
+        <h2 class="instance__title">Живой пример</h2>
         <p class="instance__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="instance__resaults resaults">
-          <div class="resaults__item weight-item">
+        <div class="instance__results results">
+          <div class="results__item weight-item">
             <p class="weight-item__weight"><b>5 кг</b></p>
             <p class="weight-item__text">снижение веса</p>
           </div>
-          <div class="resaults__item days-item">
+          <div class="results__item days-item">
             <p class="days-item__weight"><b>60 дней</b></p>
             <p class="days-item__text">затрачено времени</p>
           </div>
@@ -159,15 +150,15 @@
     </section>
     <section class="cooperation">
       <div class="cooperation__wrapper">
-        <h2 class="cooperation__title section-title">
-          приглашаем<br> к сотрудничеству<br> дилеров!
+        <h2 class="cooperation__title">
+          Приглашаем<br> к сотрудничеству<br> дилеров!
         </h2>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
     </section>
     <section class="map">
-      <h2 class="map__title section-title visually-hidden">Мы на карте</h2>
-      <div class="map-wrapper">
+      <h2 class="map__title visually-hidden">Мы на карте</h2>
+      <div class="map__wrapper map-wrapper">
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659549166393!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <!--Как прилепить логотип на булавку, я не знаю =(-->
       </div>
@@ -176,10 +167,10 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__item footer__item--large">
-        <div class="brand">Cat Energy</div>
+      <div class="footer__item footer-brand">
+        <b>Cat</b> Energy
       </div>
-      <div class="footer__item footer__item--small footer-social">
+      <div class="footer__item footer-social">
         <div class="footer-social__item">
           <a class="footer-social__link" href="https://vk.com/htmlacademy" target="_blank">
             <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +197,7 @@
           </a>
         </div>
       </div>
-      <div class="footer__item footer__item--medium footer-production">
+      <div class="footer__item footer-production">
         <p class="footer-production__item">
           HTML Academy
         </p>
@@ -218,10 +209,5 @@
       </div>
     </div>
   </footer>
-
-
-
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
-
   </body>
 </html>
