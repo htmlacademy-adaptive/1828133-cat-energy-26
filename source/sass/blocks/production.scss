@@ -1,0 +1,24 @@
+.production {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 20px;
+
+  .production__brand {
+    margin: 0;
+
+    @include text-arial-regular;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .production__link{
+    padding: 12px;
+  }
+
+  .production__link span {
+    @include visually-hidden;
+  }
+}
+

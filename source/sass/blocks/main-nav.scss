@@ -1,0 +1,69 @@
+.main-nav {
+
+  .main-nav__toggle {
+    width: 19px;
+    @include button;
+  }
+
+  .main-nav__toggle span {
+    @include visually-hidden;
+  }
+
+  .main-nav__toggle::before,
+  .main-nav__toggle::after {
+    position: absolute;
+    margin-left: -9px;
+    margin-top: -3px;
+    width: 19px;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+  }
+
+  .main-nav__toggle::before {
+    transform: rotate(45deg);
+  }
+
+  .main-nav__toggle::after {
+    transform: rotate(-45deg);
+  }
+
+  .main-nav__wrapper{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 65px;
+    margin: 0 calc(100% / -2);
+    text-align: center;
+
+    background-color:  #ffffff;
+
+    @include visually-hidden;
+    z-index: 2;
+  }
+
+  .main-nav__list {
+    @include list-zero;
+  }
+
+  .main-nav__item {
+    padding: 22px 20px 24px;
+
+    border-top: 1px solid #E6E6E6;
+
+    // font-family: "Oswald";
+    // font-style: normal;
+    // font-size: 20px;
+    // line-height: 20px;
+    // font-weight: 500;
+    // color: #000000;
+    // text-transform: uppercase;
+    @include text-oswald-medium;
+
+  }
+
+  .main-nav__item a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

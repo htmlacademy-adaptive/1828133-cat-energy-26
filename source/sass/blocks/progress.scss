@@ -1,0 +1,12 @@
+.progress {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 35px;
+
+  .progress__text {
+    @include text-oswald-regular;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

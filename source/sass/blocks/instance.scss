@@ -1,0 +1,36 @@
+.instance {
+  background-color: #EAEAEA;
+
+  .instance__wrapper {
+    @include container;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .instance__title {
+    @include section-title;
+  }
+
+  .instance__text {
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include text-arial-regular;
+  }
+
+  .instance__cost {
+    margin: 0;
+    margin-bottom: 40px;
+
+    @include text-oswald-regular;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .instance__image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}

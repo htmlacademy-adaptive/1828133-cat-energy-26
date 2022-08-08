@@ -1,0 +1,30 @@
+.cooperation {
+  .cooperation__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include container;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .cooperation__title {
+    margin: 0;
+    width: 50%;
+
+    @include text-oswald-regular;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+  }
+
+  .cooperation__address {
+    width: 200px;
+
+    @include text-arial-regular;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

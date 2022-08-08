@@ -1,0 +1,60 @@
+.card {
+  background-color: #F2F2F2;
+
+  .card__header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 22px;
+
+    @include text-oswald-regular();
+  }
+
+  .card__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 19px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #68B738;
+    border-radius: 50%;
+  }
+
+  .card__image-wrapper svg {
+    position: relative;
+    top: -3px;
+  }
+
+  .card__title {
+    color: #000000;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+
+  .card__text {
+    margin: 0;
+
+    @include text-arial-regular;
+  }
+
+  .card__text::after {
+    display: block;
+    margin-top: 23px;
+    margin-bottom: 15px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #D9D9D9;
+  }
+
+  .card__more {
+    @include text-oswald-regular();
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+  }
+}

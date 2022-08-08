@@ -1,0 +1,32 @@
+.brief {
+
+  .brief__wrapper {
+    @include container;
+    padding-bottom: 50px;
+  }
+
+  .brief__title {
+    @include section-title;
+  }
+
+  .brief__list {
+    @include list-zero;
+  }
+
+  .brief__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .brief__item + .brief__item {
+    padding-top: 20px;
+  }
+
+  .brief-item__image {
+    margin-right: 20px;
+  }
+
+  .brief-item__text {
+    @include text-arial-regular;
+  }
+}
