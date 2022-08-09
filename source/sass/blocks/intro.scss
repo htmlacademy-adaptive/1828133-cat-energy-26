@@ -1,0 +1,57 @@
+@mixin intro-text-color {
+  color: #ffffff;
+}
+
+.intro {
+  text-align: center;
+  @include text-oswald-regular();
+
+  .intro__wrapper {
+    @include container;
+    padding-top: 27px;
+    padding-bottom: 20px;
+    background-image: url("../img/intro-cat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .intro__header {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+    line-height: 36px;
+    @include intro-text-color();
+
+  }
+
+  .intro__slogan {
+    margin: 0;
+    margin-bottom: 145px;
+
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    @include intro-text-color();
+  }
+
+  .intro__product-wrapper {
+    position: relative;
+    top: -135px;
+  }
+
+  .intro__button-wrapper {
+    @include container;
+  }
+
+  .intro__button {
+    display: block;
+
+    padding: 14px 74px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    @include intro-text-color();
+    background-color: #68B738;
+  }
+}

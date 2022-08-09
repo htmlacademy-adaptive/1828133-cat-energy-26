@@ -1,0 +1,43 @@
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin button {
+  padding: 0;
+  border: none;
+  font-style: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+@mixin section-title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  @include text-oswald-regular;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+@mixin list-zero {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin container {
+  padding: 0 20px;
+}

@@ -1,0 +1,39 @@
+.results {
+  display: flex;
+  justify-content: space-between;
+
+  .results__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include text-oswald-regular;
+  }
+
+  .results__number {
+    margin: 0;
+    padding: 15px 42px 18px;
+
+    border: 1px solid #CDCDCD;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .results__text {
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 70%;
+
+    @include text-arial-regular;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: lowercase;
+
+    background-color: #EAEAEA;
+  }
+}
+
+

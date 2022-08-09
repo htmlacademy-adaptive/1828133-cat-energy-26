@@ -1,0 +1,12 @@
+.main-footer {
+  background-color: #F2F2F2;;
+
+  .main-footer__wrapper {
+    @include container;
+    text-align: center;
+  }
+
+  .main-footer__item + .main-footer__item {
+    border-top: 1px solid #D9D9D9;;
+  }
+}

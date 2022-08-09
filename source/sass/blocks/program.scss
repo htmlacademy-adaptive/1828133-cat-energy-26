@@ -1,0 +1,19 @@
+.program {
+  @include container;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .program__title {
+    @include section-title;
+    @include visually-hidden;
+  }
+
+  .program__card {
+    padding: 30px 33px 18px 20px;
+  }
+
+  .program__card + .program__card {
+    margin-top: 20px;
+  }
+}
+
