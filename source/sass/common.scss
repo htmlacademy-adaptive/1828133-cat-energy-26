@@ -14,22 +14,50 @@
 }
 
 @mixin button {
+  box-sizing: border-box;
+
+  display: block;
+  min-height: 40px;
+
   padding: 0;
   border: none;
   font-style: inherit;
-  color: inherit;
-  background-color: transparent;
+  color: #ffffff;
+  background-color: #68B738;
+
+  cursor: pointer;
+}
+
+@mixin page-header-h1 {
+    margin: 0;
+    padding-bottom: 41px;
+
+    @include text-oswald-regular;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
 }
 
 @mixin section-title {
   margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
+  padding-top: 26px;
+  padding-bottom: 35px;
 
   @include text-oswald-regular;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 24px;
   color: #000000;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 @mixin list-zero {
@@ -40,4 +68,14 @@
 
 @mixin container {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
+
+

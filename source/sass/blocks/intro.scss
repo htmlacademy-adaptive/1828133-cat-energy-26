@@ -1,16 +1,51 @@
 @mixin intro-text-color {
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .intro {
+  margin: 0 auto;
+
   text-align: center;
   @include text-oswald-regular();
 
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+
   .intro__wrapper {
     @include container;
+
+    margin-bottom: 135px;
     padding-top: 27px;
     padding-bottom: 20px;
     background-image: url("../img/intro-cat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-left: 89px;
+      padding-bottom: 0;
+
+      background-image: none;
+
+      text-align: start;
+    }
+  }
+
+  .intro__wrapper::before {
+    width: 720px;
+    height: 694px;
+
+    background-image: url("../img/intro-cat-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -18,11 +53,12 @@
   .intro__header {
     margin: 0;
     margin-bottom: 25px;
-
-    font-size: 36px;
-    line-height: 36px;
+    @include page-header-h1;
     @include intro-text-color();
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 41px;
+    }
   }
 
   .intro__slogan {
@@ -31,27 +67,65 @@
 
     font-size: 14px;
     line-height: 14px;
-    text-transform: uppercase;
     @include intro-text-color();
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   .intro__product-wrapper {
-    position: relative;
-    top: -135px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-140px, -60px);
+
+    @media (min-width: $tablet-width) {
+      position: static;
+
+      transform: none;
+    }
+  }
+
+  .intro__product {
+    width: 280px;
+    height: 270px;
+
+    @media (min-width: $tablet-width) {
+      width: 709px;
+      height: 609px;
+    }
   }
 
   .intro__button-wrapper {
     @include container;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 40%;
+      left: 11%;
+
+      padding: 0;
+    }
   }
 
   .intro__button {
     display: block;
 
-    padding: 14px 74px;
+    padding: 7px 44px;
 
     text-transform: uppercase;
     text-decoration: none;
     @include intro-text-color();
     background-color: #68B738;
+
+    @media (min-width: $tablet-width) {
+      padding: 15px 46px;
+
+      color: #ffffff;
+    }
   }
 }

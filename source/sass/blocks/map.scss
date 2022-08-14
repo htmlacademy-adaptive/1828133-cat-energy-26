@@ -1,6 +1,12 @@
 .map {
+
+
   .map__title {
     @include section-title;
     @include visually-hidden;
+  }
+
+  .map__iframe {
+    width: 100%;
   }
 }

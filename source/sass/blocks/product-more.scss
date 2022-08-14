@@ -1,0 +1,35 @@
+.product-more {
+
+  .product-more__icon {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .product-more__title {
+    margin-bottom: 8px;
+
+    @include text-oswald-regular;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product-more__subtitle {
+    margin-bottom: 21px;
+
+    @include text-arial-regular;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .product-more__button {
+    @include button;
+
+    padding: 10px 0;
+    background-color: #F2F2F2;
+    color: #000000;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}

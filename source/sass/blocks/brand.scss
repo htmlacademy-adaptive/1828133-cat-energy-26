@@ -1,5 +1,9 @@
 .brand {
-  padding: 36px 76px 31px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   .brand__logo {
     width: 128px;
