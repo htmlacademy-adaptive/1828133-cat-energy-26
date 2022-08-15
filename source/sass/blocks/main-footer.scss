@@ -1,6 +1,5 @@
 .main-footer {
-  background-color: #F2F2F2;
-  ;
+  background-color: #f2f2f2;
 
   .main-footer__wrapper {
     @include container;
@@ -18,8 +17,8 @@
     }
   }
 
-  .main-footer__item+.main-footer__item {
-    border-top: 1px solid #D9D9D9;
+  .main-footer__item + .main-footer__item {
+    border-top: 1px solid #d9d9d9;
 
     @media (min-width: $tablet-width) {
       border-top: none;

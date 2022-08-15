@@ -1,4 +1,5 @@
 .main-form {
+
   .main-form__wrapper {
     @include container;
     padding-bottom: 32px;
@@ -30,7 +31,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
 
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid #d9d9d9;
   }
 
   .main-form__fieldset-wrapper--extra {
@@ -84,7 +85,6 @@
   }
 
   .main-form__label--extra {
-
     @media (min-width: $tablet-width) {
       width: 280px;
       margin: 0;

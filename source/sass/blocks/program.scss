@@ -20,7 +20,7 @@
     @include visually-hidden;
   }
 
-  .program__card+.program__card {
+  .program__card + .program__card {
     margin-top: 20px;
 
     @media (min-width: $desktop-width) {
