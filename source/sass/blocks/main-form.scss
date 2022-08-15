@@ -10,9 +10,9 @@
   }
 
   .main-form__fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     font-size: 100%;
     vertical-align: baseline;
   }
@@ -87,7 +87,7 @@
   .main-form__label--extra {
     @media (min-width: $tablet-width) {
       width: 280px;
-      margin: 0;
+      margin: 0px;
       margin-bottom: 37px;
     }
   }
@@ -101,7 +101,7 @@
   .main-form__input {
     flex-grow: 1;
 
-    padding: 13px 0 13px 15px;
+    padding: 13px 0px 13px 15px;
     border-width: 1px;
 
     @include text-oswald-regular;
@@ -117,7 +117,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
 
-      padding: 0 40px;
+      padding: 0px 40px;
 
       align-items: center;
     }
@@ -134,7 +134,7 @@
 
     @media (min-width: $tablet-width) {
       width: 280px;
-      margin-bottom: 0;
+      margin-bottom: 0px;
       margin-right: 60px;
     }
   }

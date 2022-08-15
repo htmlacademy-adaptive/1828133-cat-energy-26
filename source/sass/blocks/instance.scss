@@ -1,5 +1,5 @@
 .instance {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -26,7 +26,6 @@
       display: flex;
       justify-content: space-between;
     }
-
   }
 
   .instance__title {

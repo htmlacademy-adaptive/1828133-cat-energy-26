@@ -120,7 +120,7 @@
     text-transform: uppercase;
     text-decoration: none;
     @include intro-text-color();
-    background-color: #68B738;
+    background-color: #68b738;
 
     @media (min-width: $tablet-width) {
       padding: 15px 46px;
