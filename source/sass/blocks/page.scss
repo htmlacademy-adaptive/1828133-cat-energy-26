@@ -1,5 +1,4 @@
 .page {
-
   .page__body {
     margin: 0;
   }
@@ -14,6 +13,7 @@
 
   .page__title {
     margin: 0;
+
     @include text-oswald-regular;
     font-size: 14px;
     line-height: 18px;

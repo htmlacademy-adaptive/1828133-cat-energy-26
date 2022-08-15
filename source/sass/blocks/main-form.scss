@@ -1,5 +1,4 @@
 .main-form {
-
   .main-form__wrapper {
     @include container;
     padding-bottom: 32px;
@@ -10,9 +9,9 @@
   }
 
   .main-form__fieldset {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
     font-size: 100%;
     vertical-align: baseline;
   }
@@ -36,7 +35,7 @@
 
   .main-form__fieldset-wrapper--extra {
     @media (min-width: $tablet-width) {
-      padding: 25px 0px;
+      padding: 25px 0;
 
       flex-direction: row;
       flex-wrap: wrap;
@@ -87,7 +86,7 @@
   .main-form__label--extra {
     @media (min-width: $tablet-width) {
       width: 280px;
-      margin: 0px;
+      margin: 0;
       margin-bottom: 37px;
     }
   }
@@ -101,7 +100,7 @@
   .main-form__input {
     flex-grow: 1;
 
-    padding: 13px 0px 13px 15px;
+    padding: 13px 0 13px 15px;
     border-width: 1px;
 
     @include text-oswald-regular;
@@ -117,7 +116,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
 
-      padding: 0px 40px;
+      padding: 0 40px;
 
       align-items: center;
     }
@@ -127,14 +126,14 @@
     @include button;
 
     margin-bottom: 21px;
-
     width: 100%;
+
     @include text-oswald-regular;
     color: #ffffff;
 
     @media (min-width: $tablet-width) {
       width: 280px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       margin-right: 60px;
     }
   }

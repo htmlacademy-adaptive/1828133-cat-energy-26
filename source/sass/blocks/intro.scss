@@ -10,6 +10,7 @@
   margin: 0 auto;
 
   text-align: center;
+
   @include text-oswald-regular();
 
   @media (min-width: $tablet-width) {
@@ -53,6 +54,7 @@
   .intro__header {
     margin: 0;
     margin-bottom: 25px;
+
     @include page-header-h1;
     @include intro-text-color();
 
@@ -67,6 +69,7 @@
 
     font-size: 14px;
     line-height: 14px;
+
     @include intro-text-color();
 
     @media (min-width: $tablet-width) {
@@ -119,7 +122,9 @@
 
     text-transform: uppercase;
     text-decoration: none;
+
     @include intro-text-color();
+
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {

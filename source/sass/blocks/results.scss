@@ -28,10 +28,11 @@
     width: 124px;
 
     text-align: center;
+
     @include text-oswald-regular;
   }
 
-  .results__item+.results__item {
+  .results__item + .results__item {
     margin-left: 42px;
   }
 
