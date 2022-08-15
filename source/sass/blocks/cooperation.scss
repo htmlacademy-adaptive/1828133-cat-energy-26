@@ -1,5 +1,5 @@
 .cooperation {
-  .cooperation__wrapper{
+  .cooperation__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,8 +15,8 @@
 
     @media (min-width: $desktop-width) {
       position: absolute;
-    background-color: #ffffff;
-    transform: translate(20%, 100%);
+      background-color: #ffffff;
+      transform: translate(20%, 100%);
     }
   }
 

@@ -8,10 +8,10 @@
     padding-bottom: 71px;
   }
 
-.program__wrapper {
-  @media (min-width: $desktop-width) {
-  display: flex;
-  justify-content: space-between;
+  .program__wrapper {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -20,7 +20,7 @@
     @include visually-hidden;
   }
 
-  .program__card + .program__card {
+  .program__card+.program__card {
     margin-top: 20px;
 
     @media (min-width: $desktop-width) {

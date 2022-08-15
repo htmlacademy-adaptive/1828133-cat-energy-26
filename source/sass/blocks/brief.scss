@@ -54,7 +54,7 @@
     }
   }
 
-  .brief-item + .brief-item {
+  .brief-item+.brief-item {
     margin-top: 20px;
 
     @media (min-width: $tablet-width) {

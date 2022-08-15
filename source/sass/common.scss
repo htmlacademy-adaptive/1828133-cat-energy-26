@@ -29,18 +29,18 @@
 }
 
 @mixin page-header-h1 {
-    margin: 0;
-    padding-bottom: 41px;
+  margin: 0;
+  padding-bottom: 41px;
 
-    @include text-oswald-regular;
-    font-size: 36px;
-    line-height: 36px;
-    text-transform: none;
+  @include text-oswald-regular;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
 
-    @media (min-width: $tablet-width) {
-      font-size: 60px;
-      line-height: 60px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 @mixin section-title {
