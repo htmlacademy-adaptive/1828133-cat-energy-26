@@ -21,7 +21,7 @@
     }
   }
 
-  .results__item{
+  .results__item {
     display: flex;
     flex-direction: column;
 
@@ -31,7 +31,7 @@
     @include text-oswald-regular;
   }
 
-  .results__item + .results__item {
+  .results__item+.results__item {
     margin-left: 42px;
   }
 
@@ -86,5 +86,3 @@
     }
   }
 }
-
-

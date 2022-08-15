@@ -101,11 +101,11 @@
 
     }
 
-     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       flex-direction: row;
-      }
-
     }
+
+  }
 
 
   .product__item--product-more {
@@ -129,7 +129,7 @@
 
     @media (min-width: $desktop-width) {
       width: inherit;
-      }
+    }
   }
 
   .product__text {
@@ -141,7 +141,7 @@
 
     @media (min-width: $desktop-width) {
       width: inherit;
-      }
+    }
   }
 
   .product__text--row {
@@ -224,12 +224,12 @@
       width: 75%;
       min-width: 0;
       margin: 0 auto;
-      }
+    }
   }
 
   .product__button--row {
     @media (min-width: $desktop-width) {
       width: 100%;
-      }
+    }
   }
 }
