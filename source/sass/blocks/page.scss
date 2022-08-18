@@ -1,6 +1,26 @@
 .page {
-
   .page__body {
     margin: 0;
+  }
+
+  .page__wrapper {
+    @include container;
+  }
+
+  .page__header {
+    @include page-header-h1;
+  }
+
+  .page__title {
+    margin: 0;
+
+    @include text-oswald-regular;
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

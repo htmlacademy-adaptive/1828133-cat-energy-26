@@ -1,5 +1,5 @@
 .cooperation {
-  .cooperation__wrapper{
+  .cooperation__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,24 +7,41 @@
     @include container;
     padding-top: 26px;
     padding-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      background-color: #ffffff;
+      transform: translate(20%, 100%);
+    }
   }
 
   .cooperation__title {
     margin: 0;
-    width: 50%;
 
     @include text-oswald-regular;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-
   }
 
   .cooperation__address {
-    width: 200px;
+    width: 140px;
 
     @include text-arial-regular;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      text-align: end;
+    }
   }
+}
+
+.cooperation--gray {
+  background-color: #f2f2f2;
 }

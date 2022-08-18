@@ -1,9 +1,21 @@
 .main-header {
   @include container;
-  padding-top: 12px;
-  padding-bottom: 15px;
 
-  .main-header__wrapper{
+  margin: 0 auto;
+
+  height: 65px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+
+  .main-header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
