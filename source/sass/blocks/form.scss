@@ -1,0 +1,196 @@
+.form-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+
+.form__wrapper {
+  @include form-container;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+}
+
+.form__header {
+  @include form-container;
+  @include header-h1;
+
+  text-transform: none;
+
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 56px;
+  }
+}
+
+.form__header-subtitle {
+  @include section-title;
+  @include form-container;
+
+  margin-bottom: 39px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__title {
+  margin-left: 20px;
+
+  @include text-oswald-regular;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+
+  @include form-container;
+
+  border: 0;
+  font-size: 100%;
+}
+
+.form__fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.form__row {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__row:not(:last-child) {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+
+  margin-right: 10px;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__label-title {
+  padding-left: 45px;
+}
+
+.form__input {
+  flex-grow: 1;
+
+  padding: 13px 0 13px 15px;
+
+  border: 1px solid #e7e7e7;
+
+  @include text-oswald-regular;
+}
+
+.form__input[type="text"]:hover {
+  border-color: #cdcdcd;
+}
+
+.form__input[type="text"]:focus {
+  border-color: #444444;
+}
+// непонятно вот здесь
+.form__input[type="text"]:focus:invalid {
+  border-color: #ff8282;
+}
+
+.form__submit-group {
+  @include form-container;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    align-items: center;
+  }
+}
+
+.form__submit {
+  @include button-green;
+
+  margin-bottom: 21px;
+  width: 100%;
+
+  @include text-oswald-regular;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
+}
+
+.form__footnote {
+  @include text-arial-regular;
+
+  text-align: center;
+}

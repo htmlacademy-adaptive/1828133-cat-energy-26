@@ -2,20 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  .production__brand {
-    margin: 0;
+.production__brand {
+  margin: 0;
 
-    @include text-arial-regular;
-    font-size: 16px;
-    line-height: 18px;
-  }
+  @include text-arial-regular;
+  font-size: 16px;
+  line-height: 18px;
+}
 
-  .production__link {
-    padding: 12px;
-  }
+.production__link {
+  padding: 10px 12px;
+}
 
-  .production__link span {
-    @include visually-hidden;
-  }
+.production__link span {
+  @include visually-hidden;
 }

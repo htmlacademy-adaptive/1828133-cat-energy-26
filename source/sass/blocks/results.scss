@@ -11,79 +11,85 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
+}
 
-  .results__items-wrapper {
-    display: flex;
-    justify-content: space-between;
+.results__items-wrapper {
+  display: flex;
+  justify-content: space-between;
 
-    @media (min-width: $desktop-width) {
-      justify-content: flex-start;
-    }
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
   }
+}
 
-  .results__item {
-    display: flex;
-    flex-direction: column;
+.results__item {
+  display: flex;
+  flex-direction: column;
 
-    width: 124px;
+  width: 124px;
 
-    text-align: center;
+  text-align: center;
+}
 
-    @include text-oswald-regular;
-  }
-
-  .results__item + .results__item {
+.results__item + .results__item {
+  @media (min-width: $tablet-width) {
     margin-left: 42px;
   }
+}
 
-  .results__number {
-    margin: 0;
-    padding: 15px 20px 18px;
+.results__number {
+  margin: 0;
+  padding: 15px 20px 18px;
 
-    border: 1px solid #cdcdcd;
+  border: 1px solid #cdcdcd;
 
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #000000;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.results__text {
+  position: relative;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 70%;
+
+  @include text-arial-regular;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
   }
 
-  .results__text {
-    position: relative;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    width: 70%;
-
-    @include text-arial-regular;
-    font-size: 12px;
-    line-height: 12px;
-    text-transform: lowercase;
-
+  @media (min-width: $desktop-width) {
     background-color: #eaeaea;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      background-color: #ffffff;
-    }
+.results__cost {
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 180px;
+    text-align: end;
+
+    font-size: 20px;
+    line-height: 25px;
   }
 
-  .results__cost {
-    margin: 0 auto;
-    margin-bottom: 40px;
-
-    @include text-oswald-regular;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-      width: 130px;
-      text-align: end;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-      text-align: start;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: start;
   }
 }

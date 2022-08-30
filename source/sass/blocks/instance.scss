@@ -4,60 +4,95 @@
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
   }
+}
 
-  .instance__text-container {
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: column;
-    }
+.instance__text-container {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 200px;
   }
 
-  .instance__wrapper {
-    @include container;
-    padding-top: 25px;
-    padding-bottom: 40px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      padding-top: 43px;
-      padding-bottom: 40px;
-    }
+.instance__wrapper {
+  padding-bottom: 40px;
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
-    }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
   }
 
-  .instance__title {
-    @include section-title;
-    text-transform: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
 
-    @media (min-width: $tablet-width) {
-      font-size: 60px;
-      line-height: 60px;
-    }
+    background-color: #eaeaea;
+  }
+}
+
+.instance__title {
+  @include section-title;
+  @include container;
+  text-transform: none;
+  padding-top: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 43px;
+    margin-bottom: 63px;
   }
 
-  .instance__text {
-    margin: 0;
-    margin-bottom: 20px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
 
-    @include text-arial-regular;
+.instance__text {
+  margin: 0;
+  margin-bottom: 20px;
 
-    @media (min-width: $tablet-width) {
-      width: 437px;
+  @include text-arial-regular;
 
-      font-size: 16px;
-      line-height: 21px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  .instance__image {
-    display: block;
-    margin: 0 auto;
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      margin: 0;
-    }
+.instance__image-wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+    min-width: 768px;
+    min-height: 462px;
+    position: relative;
+  }
+}
+
+.instance__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 560px;
+    height: 512px;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-280px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -25%;
+    left: 50%;
   }
 }

@@ -7,79 +7,125 @@
   padding: 0;
   cursor: pointer;
 
-  .main-nav__toggle {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    padding: 0;
-    border: none;
+  @media (min-width: $tablet-width) {
+    height: unset;
+  }
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+
+.main-nav__wrapper {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 65px;
+  margin: 0 calc(100% / -2);
+  text-align: center;
+
+  background-color: #ffffff;
+
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    margin: 0;
+    z-index: 0;
     background-color: transparent;
   }
+}
 
+.main-nav__wrapper--closed {
+  display: none;
 
-  .main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  @include list-zero;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+  padding: 22px 20px 24px;
+
+  @include text-oswald-medium;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+
+    padding: 0;
+
+    border-top: none;
+
+    @include text-oswald-regular;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+  }
+}
+
+.main-nav__item--active::before {
+  @media (min-width: $tablet-width) {
     position: absolute;
+    content: "";
     width: 100%;
-    left: 50%;
-    top: 65px;
-    margin: 0 calc(100% / -2);
-    text-align: center;
+    height: 2px;
+    background-color: #68b738;
+    top: 27px;
+  }
+}
 
+.main-nav__item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-nav__item:hover {
+  opacity: 0.8;
+}
+
+.main-nav__item:active {
+  opacity: 0.6;
+}
+
+.main-nav__item--overlay {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.main-nav__item--overlay-active::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
     background-color: #ffffff;
-
-    z-index: 2;
-
-    @media (min-width: $tablet-width) {
-      position: static;
-
-      margin: 0;
-      z-index: 0;
-      background-color: transparent;
-    }
-  }
-
-  .main-nav__wrapper--closed {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-  }
-
-  .main-nav__list {
-    @include list-zero;
-
-    @media (min-width: $tablet-width) {
-      display: flex;
-    }
-  }
-
-  .main-nav__item {
-    padding: 22px 20px 24px;
-
-    @include text-oswald-medium;
-
-    border-top: 1px solid #e6e6e6;
-
-    @media (min-width: $tablet-width) {
-      margin-right: 34px;
-      padding: 0;
-
-      border-top: none;
-    }
-  }
-
-  .main-nav__item--active {
-    @media (min-width: $tablet-width) {
-      padding-bottom: 10px;
-
-      border-bottom: 2px solid #68b738;
-    }
-  }
-
-  .main-nav__item a {
-    color: inherit;
-    text-decoration: none;
+    top: 27px;
   }
 }
 

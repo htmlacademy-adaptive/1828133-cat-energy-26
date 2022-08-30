@@ -1,0 +1,154 @@
+@mixin text-oswald-regular() {
+  font-family: "Oswald", "Arial", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@mixin text-oswald-medium() {
+  font-family: "Oswald Medium", "Arial", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@mixin text-arial-regular() {
+  font-family: "Arial", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: none;
+}
+
+@mixin intro-text-color {
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  // -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin button-green {
+  box-sizing: border-box;
+
+  display: block;
+  min-height: 40px;
+
+  padding: 0;
+  border: none;
+  font-style: inherit;
+  color: #ffffff;
+  background-color: #68b738;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}
+
+@mixin button-gray {
+  box-sizing: border-box;
+
+  display: block;
+  min-height: 40px;
+
+  padding: 0;
+  border: none;
+  font-style: inherit;
+  color: #444444;
+  background-color: #f2f2f2;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    color: rgba($color: #444444, $alpha: 0.3);
+  }
+}
+
+@mixin header-h1 {
+  margin: 0;
+
+  @include text-oswald-regular;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@mixin section-title {
+  margin: 0;
+
+  @include text-oswald-regular;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@mixin list-zero {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+@mixin form-container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}

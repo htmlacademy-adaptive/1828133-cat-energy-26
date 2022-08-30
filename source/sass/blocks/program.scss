@@ -7,24 +7,24 @@
     padding-top: 71px;
     padding-bottom: 71px;
   }
+}
 
-  .program__wrapper {
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
-    }
+.program__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
+}
 
-  .program__title {
-    @include section-title;
-    @include visually-hidden;
-  }
+.program__title {
+  @include section-title;
+  @include visually-hidden;
+}
 
-  .program__card + .program__card {
-    margin-top: 20px;
+.program__card + .program__card {
+  margin-top: 20px;
 
-    @media (min-width: $desktop-width) {
-      margin-top: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
