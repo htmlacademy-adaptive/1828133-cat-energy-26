@@ -1,27 +1,52 @@
 .main-footer {
   background-color: #f2f2f2;
+}
 
-  .main-footer__wrapper {
-    @include container;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    text-align: center;
+.main-footer__wrapper {
+  @include container;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  text-align: center;
 
-      padding-top: 42px;
-      padding-bottom: 42px;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
+}
 
-  .main-footer__item + .main-footer__item {
-    border-top: 1px solid #d9d9d9;
+.main-footer__home-link {
+  display: block;
+  padding: 20px 0;
+}
 
-    @media (min-width: $tablet-width) {
-      border-top: none;
-    }
+.main-footer__home-link:hover {
+  opacity: 0.8;
+}
+
+.main-footer__home-link:active {
+  opacity: 0.6;
+}
+
+.main-footer__item + .main-footer__item {
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
   }
+}
+
+.main-footer__item--social {
+  padding: 9px 76px;
+}
+
+.main-footer__item--production {
+  padding: 10px 0;
+}
+
+.main-footer__brand-image {
+  width: 128px;
+  height: 24px;
 }

@@ -1,0 +1,22 @@
+.cat-info {
+  padding-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cat-info__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    flex-grow: 1;
+
+    margin-bottom: 0;
+  }
+}

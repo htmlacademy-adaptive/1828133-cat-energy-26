@@ -1,0 +1,9 @@
+.cat-habit__wrapper {
+  border-bottom: none;
+}
+
+.cat-habit__textarea {
+  @include text-oswald-regular;
+
+  padding: 9px 12px;
+}

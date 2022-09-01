@@ -1,26 +1,25 @@
-.page {
-  .page__body {
-    margin: 0;
-  }
+.page__body {
+  margin: 0;
 
-  .page__wrapper {
-    @include container;
-  }
+  @include text-oswald-regular;
+}
 
-  .page__header {
-    @include page-header-h1;
-  }
+.page__wrapper {
+  @include container;
+}
 
-  .page__title {
-    margin: 0;
+.page__header {
+  @include header-h1;
+}
 
-    @include text-oswald-regular;
-    font-size: 14px;
-    line-height: 18px;
+.page__title {
+  margin: 0;
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-    }
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
