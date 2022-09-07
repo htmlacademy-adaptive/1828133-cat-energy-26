@@ -1,22 +1,46 @@
 .cat-info {
-  padding-bottom: 24px;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.cat-info__wrapper {
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 570px;
     flex-grow: 1;
-
     margin-bottom: 0;
+    padding-right: 80px;
   }
+}
+
+.cat-info__row {
+  @include form-row;
+}
+
+.cat-info__row + .cat-info__row {
+  margin-top: 14px;
+}
+
+.cat-info__label {
+  margin-right: 13px;
+}
+
+.cat-info__input {
+  flex-grow: 1;
+
+  padding: 13px 0 13px 15px;
+
+  border: 1px solid #e7e7e7;
+
+  @include text-oswald-regular;
+}
+
+.cat-info__input:hover {
+  border-color: #cdcdcd;
+}
+
+.cat-info__input:focus {
+  border-color: #444444;
+}
+
+// непонятно вот здесь
+.cat-info__input:focus:invalid {
+  border-color: #ff8282;
 }

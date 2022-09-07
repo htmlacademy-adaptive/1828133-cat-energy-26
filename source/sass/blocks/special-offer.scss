@@ -11,26 +11,45 @@
 
   text-align: center;
 
-  background-image: url("../img/special-offer-background.png");
+  background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
+    url("../img/special-offer-background-mobile.jpg");
+  background-color: rgba(#68b738, 0.85);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
+      url("../img/special-offer-background-mobile@2x.jpg");
+  }
+
 
   @media (min-width: $tablet-width) {
     padding: 57px 124px 61px 77px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../img/special-offer-background-tablet.png");
+    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
+      url("../img/special-offer-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
+        url("../img/special-offer-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 55px 40px 42px;
-    background-image: url("../img/special-offer-background-desktop.png");
+    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
+      url("../img/special-offer-background-desktop.jpg");
     flex-direction: column;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
+        url("../img/special-offer-background-desktop@2x.jpg");
+    }
   }
 }
-
 
 .special-offer__text {
   @include text-arial-regular;

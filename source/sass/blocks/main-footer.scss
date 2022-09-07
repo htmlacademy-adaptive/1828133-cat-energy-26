@@ -12,14 +12,14 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 
 .main-footer__home-link {
   display: block;
-  padding: 20px 0;
+  padding: 33px 0;
 }
 
 .main-footer__home-link:hover {
@@ -36,14 +36,6 @@
   @media (min-width: $tablet-width) {
     border-top: none;
   }
-}
-
-.main-footer__item--social {
-  padding: 9px 76px;
-}
-
-.main-footer__item--production {
-  padding: 10px 0;
 }
 
 .main-footer__brand-image {

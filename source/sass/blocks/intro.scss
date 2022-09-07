@@ -18,9 +18,14 @@
   margin-bottom: 135px;
   padding-top: 27px;
   padding-bottom: 20px;
-  background-image: url("../img/intro-cat.png");
+  background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -42,13 +47,18 @@
     top: 0;
     left: 50%;
 
+    background-color: rgba($color: #68b739, $alpha: 0.85);
     background-image:
       linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-      url("../img/intro-cat-desktop.png");
+      url("../img/intro-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-desktop@2x.jpg");
+    }
   }
 }
 

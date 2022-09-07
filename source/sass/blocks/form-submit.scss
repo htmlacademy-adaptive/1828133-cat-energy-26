@@ -1,0 +1,36 @@
+.form-submit {
+  @include form-container;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    align-items: center;
+  }
+}
+
+.form-submit__button {
+  @include button-green;
+
+  margin-bottom: 21px;
+  width: 100%;
+
+  @include text-oswald-regular;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
+}
+
+.form-submit__footnote {
+  @include text-arial-regular;
+
+  text-align: center;
+}

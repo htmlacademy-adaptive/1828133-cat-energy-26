@@ -6,7 +6,40 @@
 }
 
 .client-contacts__row {
+  @include form-row;
+
   @media (min-width: $desktop-width) {
     width: 45%;
   }
+}
+
+.client-contacts__row + .client-contacts__row {
+  margin-top: 13px;
+}
+
+.client-contacts__label {
+  margin-right: 13px;
+}
+
+.client-contacts__input {
+  flex-grow: 1;
+
+  padding: 13px 0 13px 15px;
+
+  border: 1px solid #e7e7e7;
+
+  @include text-oswald-regular;
+}
+
+.client-contacts__input:hover {
+  border-color: #cdcdcd;
+}
+
+.client-contacts__input:focus {
+  border-color: #444444;
+}
+
+// непонятно вот здесь
+.client-contacts__input:focus:invalid {
+  border-color: #ff8282;
 }

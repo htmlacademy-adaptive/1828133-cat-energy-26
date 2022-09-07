@@ -85,7 +85,7 @@
   }
 }
 
-.brief-item::after {
+.brief__item::after {
   @media (min-width: $tablet-width) {
 
     display: block;
@@ -102,7 +102,7 @@
   }
 }
 
-.brief-item__image {
+.brief__image {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 
@@ -115,7 +115,7 @@
   }
 }
 
-.brief-item__text {
+.brief__text {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 
