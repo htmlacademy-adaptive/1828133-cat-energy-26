@@ -12,24 +12,15 @@
   <header class="main-header">
 
     <div class="main-header__wrapper">
-      <a class="main-header__home-link" href="./index.html">
+      <a class="main-header__home-link">
         <div class="main-header__logo-wrapper">
           <picture>
-            <source srcset="./img/logo-desktop.svg" media="(min-width: 768px)">
-            <img class="main-header__logo-image" src="./img/logo-mobile.svg"
+            <source media="(min-width: 768px)" srcset="./img/logo-desktop.svg">
+            <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="191" height="38"
               alt="Маскот Cat Energy. Маленький белый пёс-супер-герой высунул язык. На голове оранжевая маска до носа. Оранжевый плащ и трусы. На груди жёлтая молния">
           </picture>
         </div>
       </a>
-
-      <div class="main-header__brand">
-        <div class="main-header__brand-wrapper">
-          <picture>
-            <img class="main-header__brand-image" src="./img/logo2-mobile.svg"
-              alt="Текстовый логотип бренда Cat Energy. Представляет собой два слова Cat и Energy написанными печатными, прописными буквами, черного цвета на белом фоне. Первое слово написано, несколько, жирнее чем второе">
-          </picture>
-        </div>
-      </div>
 
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
@@ -67,8 +58,13 @@
           <div class="product__item-wrapper">
             <li class="product__item">
               <div class="product__image-wrapper">
-                <img class="product__image" src="./img/product/chiken-pro-500.png"
-                  alt="Банка cat-energy PRO со вкусом курицы. 500 грамм">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./img/product/chicken-500-tablet.jpg 1x, ./img/product/chicken-500-tablet@2x.jpg 2x">
+                  <img class="product__image"
+                    srcset="./img/product/chicken-500-mobile.jpg 1x, ./img/product/chicken-500-mobile@2x.png 2x"
+                    alt="Банка cat-energy PRO со вкусом курицы. 500 грамм">
+                </picture>
               </div>
               <div class="product__text">
                 <div class="product__name">
@@ -90,14 +86,19 @@
                   </div>
                 </dl>
               </div>
-              <button class="product__button">Заказать</button>
+              <a class="product__button">Заказать</a>
             </li>
           </div>
           <div class="product__item-wrapper">
             <li class="product__item">
               <div class="product__image-wrapper">
-                <img class="product__image" src="./img/product/chiken-pro-1000.png"
-                  alt="Банка cat-energy PRO со вкусом курицы. 1000 грамм">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./img/product/chicken-1000-tablet.jpg 1x, ./img/product/chicken-1000-tablet@2x.jpg 2x">
+                  <img class="product__image"
+                    srcset="./img/product/chicken-1000-mobile.jpg 1x, ./img/product/chicken-1000-mobile@2x.jpg 2x"
+                    alt="Банка cat-energy PRO со вкусом курицы. 1000 грамм">
+                </picture>
               </div>
               <div class="product__text">
                 <div class="product__name">
@@ -119,14 +120,19 @@
                   </div>
                 </dl>
               </div>
-              <button class="product__button">Заказать</button>
+              <a class="product__button">Заказать</a>
             </li>
           </div>
           <div class="product__item-wrapper">
             <li class="product__item">
               <div class="product__image-wrapper">
-                <img class="product__image" src="./img/product/fish-pro-500.png"
-                  alt="Банка cat-energy PRO со вкусом рыбы. 500 грамм">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./img/product/fish-500-tablet.jpg 1x, ./img/product/fish-500-tablet@2x.jpg 2x">
+                  <img class="product__image"
+                    srcset="./img/product/fish-500-mobile.jpg 1x, ./img/product/fish-500-mobile@2x.jpg 2x"
+                    alt="Банка cat-energy PRO со вкусом рыбы. 500 грамм">
+                </picture>
               </div>
               <div class="product__text">
                 <div class="product__name">
@@ -148,14 +154,19 @@
                   </div>
                 </dl>
               </div>
-              <button class="product__button">Заказать</button>
+              <a class="product__button">Заказать</a>
             </li>
           </div>
           <div class="product__item-wrapper">
             <li class="product__item">
               <div class="product__image-wrapper">
-                <img class="product__image" src="./img/product/fish-pro-1000.png"
-                  alt="Банка cat-energy PRO со вкусом рыбы. 1000 грамм">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./img/product/fish-1000-tablet.jpg 1x, ./img/product/fish-1000-tablet@2x.jpg 2x">
+                  <img class="product__image"
+                    srcset="./img/product/fish-1000-mobile.jpg 1x, ./img/product/fish-1000-mobile@2x.jpg 2x"
+                    alt="Банка cat-energy PRO со вкусом рыбы. 1000 грамм">
+                </picture>
               </div>
               <div class="product__text">
                 <div class="product__name">
@@ -177,16 +188,21 @@
                   </div>
                 </dl>
               </div>
-              <button class="product__button">Заказать</button>
+              <a class="product__button">Заказать</a>
             </li>
           </div>
           <div class="product__item-wrapper">
             <li class="product__item">
               <div class="product__image-wrapper">
-                <img class="product__image" src="./img/product/rice-slim-500.png"
-                  alt="Банка cat-energy PRO со вкусом гречки. 500 грамм">
-              </div>
 
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./img/product/buckwheat-500-tablet.jpg 1x, ./img/product/buckwheat-500-tablet@2x.jpg 2x">
+                  <img class="product__image"
+                    srcset="./img/product/buckwheat-500-mobile.jpg 1x, ./img/product/buckwheat-500-mobile@2x.jpg 2x"
+                    alt="Банка cat-energy PRO со вкусом гречки. 500 грамм">
+                </picture>
+              </div>
               <div class="product__text">
                 <div class="product__name">
                   Cat Energy
@@ -207,14 +223,19 @@
                   </div>
                 </dl>
               </div>
-              <button class="product__button">Заказать</button>
+              <a class="product__button">Заказать</a>
             </li>
           </div>
           <div class="product__item-wrapper">
             <li class="product__item">
               <div class="product__image-wrapper">
-                <img class="product__image" src="./img/product/rice-slim-1000.png"
-                  alt="Банка cat-energy PRO со вкусом гречки. 1000 грамм">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./img/product/buckwheat-1000-tablet.jpg 1x, ./img/product/buckwheat-1000-tablet@2x.jpg 2x">
+                  <img class="product__image"
+                    srcset="./img/product/buckwheat-1000-mobile.jpg 1x, ./img/product/buckwheat-1000-mobile.jpg.jpg 2x"
+                    alt="Банка cat-energy PRO со вкусом гречки. 1000 грамм">
+                </picture>
               </div>
               <div class="product__text">
                 <div class="product__name">
@@ -236,14 +257,19 @@
                   </div>
                 </dl>
               </div>
-              <button class="product__button">Заказать</button>
+              <a class="product__button">Заказать</a>
             </li>
           </div>
           <div class="product__item-wrapper">
             <li class="product__item">
               <div class="product__image-wrapper">
-                <img class="product__image" src="./img/product/buckwheat-slim-500.png"
-                  alt="Банка cat-energy PRO со вкусом риса. 500 грамм">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./img/product/rice-500-tablet.jpg 1x, ./img/product/rice-500-tablet@2x.jpg 2x">
+                  <img class="product__image"
+                    srcset="./img/product/rice-500-mobile.jpg 1x, ./img/product/rice-500-mobile@2x.jpg 2x"
+                    alt="Банка cat-energy PRO со вкусом риса. 500 грамм">
+                </picture>
               </div>
               <div class="product__text">
                 <div class="product__name">
@@ -265,15 +291,13 @@
                   </div>
                 </dl>
               </div>
-              <button class="product__button">Заказать</button>
+              <a class="product__button">Заказать</a>
             </li>
           </div>
           <div class="product__item-wrapper">
             <li class="product__item product-more">
               <div class="product-more__icon-wrapper">
-                <picture>
-                  <img class="product-more__icon" src="./img/plus.svg">
-                </picture>
+                <img class="product-more__icon" src="./img/plus.svg">
               </div>
               <div class="product-more__title">
                 Показать ещё<br> 1005000 товаров
@@ -281,7 +305,7 @@
               <div class="product-more__subtitle">
                 На самом деле вкусов гораздо больше!
               </div>
-              <button class="product-more__button">Показать все</button>
+              <a class="product-more__button">Показать все</a>
             </li>
           </div>
         </ul>
@@ -310,7 +334,7 @@
                 </div>
               </dl>
             </div>
-            <button class="product-extra__button">Заказать</button>
+            <a class="product-extra__button">Заказать</a>
           </li>
 
           <li class="product-extra__item">
@@ -325,7 +349,7 @@
                 </div>
               </dl>
             </div>
-            <button class="product-extra__button">Заказать</button>
+            <a class="product-extra__button">Заказать</a>
           </li>
 
           <li class="product-extra__item">
@@ -340,7 +364,7 @@
                 </div>
               </dl>
             </div>
-            <button class="product-extra__button">Заказать</button>
+            <a class="product-extra__button">Заказать</a>
           </li>
 
           <li class="product-extra__item">
@@ -355,18 +379,14 @@
                 </div>
               </dl>
             </div>
-            <button class="product-extra__button">Заказать</button>
+            <a class="product-extra__button">Заказать</a>
           </li>
-
-
-
-
         </ul>
         <div class="special-offer">
           <div class="special-offer__wrapper">
-            <picture>
+            <div class="special-offer__icon-wrapper">
               <img class="special-offer__icon" src="./img/icon-gift.svg">
-            </picture>
+            </div>
             <div class="special-offer__text">
               Закажите все и получите чехол для кота в подарок!
             </div>
@@ -385,7 +405,7 @@
       </div>
       <div class="map">
         <h2 class="map__title">Мы на карте</h2>
-        <div class="map__wrapper map-wrapper">
+        <div class="map__wrapper">
           <iframe class="map__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659549166393!5m2!1sru!2sru"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -397,57 +417,44 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__home-link main-footer__item main-footer__item--brand" href="./index.html">
-        <picture>
-          <img class="main-footer__brand-image" src="./img/logo2-mobile.svg"
+      <a class="main-footer__home-link main-footer__item" href="./index.html">
+        <div class="main-footer__brand-image-wrapper">
+          <img class="main-footer__brand-image" src="./img/footer-logo.svg"
             alt="Текстовый логотип бренда Cat Energy. Представляет собой два слова Cat и Energy написанными печатными, прописными буквами, черного цвета на белом фоне. Первое слово написано, несколько, жирнее чем второе">
-        </picture>
-
-    </a>
-      <div class="main-footer__item main-footer__item--social social">
+        </div>
+      </a>
+      <div class="main-footer__item social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
               <span>Перейти на страницу вконтакте</span>
-              <div class="social__icon-wrapper">
-                <picture>
-                  <img src="./img/social-vk.svg" alt="Логотип ВКонтакте">
-                </picture>
-              </div>
+
+              <img src="./img/social-vk.svg" alt="Логотип ВКонтакте">
+
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube"
               href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank">
               <span>Перейти на ютуб-канал</span>
-              <div class="social__icon-wrapper">
-                <picture>
-                  <img src="./img/social-youtube.svg" alt="Логотип Youtube">
-                </picture>
-              </div>
+              <img src="./img/social-youtube.svg" alt="Логотип Youtube">
             </a>
 
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy" target="_blank">
               <span>Перейти в телеграм-канал</span>
-              <div class="social__icon-wrapper">
-                <picture>
-                  <img src="./img/social-telegram.svg" alt="Логотип Telegram">
-                </picture>
-              </div>
+              <img src="./img/social-telegram.svg" alt="Логотип Telegram">
             </a>
           </li>
         </ul>
       </div>
-      <div class="main-footer__item main-footer__item--production production">
+      <div class="main-footer__item production">
         <p class="production__brand">HTML Academy</p>
         <a class="production__link" href="https://htmlacademy.ru/" target="_blank">
           <span>Перейти на сайт разработчика</span>
-          <div class="social__icon-wrapper">
-            <picture>
-              <img src="./img/htmlacademy.svg" alt="Логотип HTML Academy">
-            </picture>
+          <div class="production__icon-wrapper">
+            <img src="./img/htmlacademy.svg" alt="Логотип HTML Academy">
           </div>
         </a>
       </div>

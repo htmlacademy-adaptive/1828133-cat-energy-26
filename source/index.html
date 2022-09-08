@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи-Index</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -15,39 +19,30 @@
       <a class="main-header__home-link">
         <div class="main-header__logo-wrapper">
           <picture>
-            <source srcset="./img/logo-desktop.svg" media="(min-width: 768px)">
-            <img class="main-header__logo-image" src="./img/logo-mobile.svg"
+            <source media="(min-width: 768px)" srcset="./img/logo-desktop.svg">
+            <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="191" height="38"
               alt="Маскот Cat Energy. Маленький белый пёс-супер-герой высунул язык. На голове оранжевая маска до носа. Оранжевый плащ и трусы. На груди жёлтая молния">
           </picture>
         </div>
       </a>
-
-      <div class="main-header__brand">
-        <div class="main-header__brand-wrapper">
-          <picture>
-            <img class="main-header__brand-image" src="./img/logo2-mobile.svg"
-              alt="Текстовый логотип бренда Cat Energy. Представляет собой два слова Cat и Energy написанными печатными, прописными буквами, черного цвета на белом фоне. Первое слово написано, несколько, жирнее чем второе">
-          </picture>
-        </div>
-      </div>
 
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span>Открыть меню</span>
         </button>
         <div class="main-nav__wrapper main-nav__wrapper--closed">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--overlay main-nav__item--overlay-active main-nav__item--active">
+          <ul class="main-nav__list main-nav__list--index">
+            <li class="main-nav__item main-nav__item--active">
               <a>
                 Главная
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--overlay">
+            <li class="main-nav__item">
               <a href="./catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--overlay">
+            <li class="main-nav__item">
               <a href="./form.html">
                 Подбор программы
               </a>
@@ -68,7 +63,12 @@
         </p>
       </div>
       <div class="intro__product-wrapper">
-        <img class="intro__product-image" src="./img/index-can-mobile-1.png" alt="Банка cat-energy, со вкусом курицы">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/intro-can-desktop.png 1x, img/intro-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/intro-can-tablet.png 1x, img/intro-can-tablet@2x.png 2x">
+          <img class="intro__product-image" src="./img/intro-can-mobile.png" srcset="./img/intro-can-mobile@2x.png"
+            alt="Банка cat-energy, со вкусом курицы">
+        </picture>
       </div>
       <div class="intro__button-wrapper">
         <a href="form.html" class="intro__button">
@@ -83,10 +83,7 @@
 
         <div class="program__card card">
           <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./img/program-slim-tablet.svg" media="(min-width: 768px)">
-              <img src="./img/program-slim.svg" alt="Силуэт грациозной кошки">
-            </picture>
+            <img class="card__image" src="./img/program-slim.svg" alt="Силуэт грациозной кошки">
           </div>
           <div class="card__title">
             Похудение
@@ -103,10 +100,7 @@
 
         <div class="program__card card">
           <div class="card__image-wrapper">
-            <picture>
-              <source srcset="./img/program-pro-tablet.svg" media="(min-width: 768px max-width: 1440px)">
-              <img src="./img/program-pro.svg" alt="Силуэт мощного кота">
-            </picture>
+            <img class="card__image" src="./img/program-pro.svg" alt="Силуэт мощного кота">
           </div>
           <div class="card__title">
             Набор массы
@@ -127,35 +121,35 @@
       <div class="brief__wrapper">
         <h2 class="brief__title">Как это работает</h2>
         <ul class="brief__list">
-          <li class="brief__item brief-item">
+          <li class="brief__item">
             <div class="brief__image-wrapper">
-              <img class="brief-item__image" src="./img/brief-1.svg" alt="">
+              <img class="brief__image" src="./img/brief-1.svg" alt="">
             </div>
-            <div class="brief-item__text">Функциональное питание содержит только полезные питательные вещества.
+            <div class="brief__text">Функциональное питание содержит только полезные питательные вещества.
             </div>
 
           </li>
-          <li class="brief__item brief-item">
+          <li class="brief__item">
             <div class="brief__image-wrapper">
-              <img class="brief-item__image" src="./img/brief-2.svg" alt="">
+              <img class="brief__image" src="./img/brief-2.svg" alt="">
             </div>
-            <div class="brief-item__text">
+            <div class="brief__text">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </div>
           </li>
-          <li class="brief__item brief-item">
+          <li class="brief__item">
             <div class="brief__image-wrapper">
-              <img class="brief-item__image" src="./img/brief-3.svg" alt="">
+              <img class="brief__image" src="./img/brief-3.svg" alt="">
             </div>
-            <div class="brief-item__text">
+            <div class="brief__text">
               Замените один-два приема обычной еды на наше функциональное питание.
             </div>
           </li>
-          <li class="brief__item brief-item">
+          <li class="brief__item">
             <div class="brief__image-wrapper">
-              <img class="brief-item__image" src="./img/brief-4.svg" alt="">
+              <img class="brief__image" src="./img/brief-4.svg" alt="">
             </div>
-            <div class="brief-item__text">
+            <div class="brief__text">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </div>
           </li>
@@ -189,7 +183,12 @@
           </div>
         </div>
         <div class="instance__image-wrapper">
-          <img class="instance__image" src="./img/instance-mobile.png" alt="Внешний вид кота до участия в программе">
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="./img/cat-slider-tablet.jpg 1x, ./img/cat-slider-tablet@2x.jpg 2x">
+            <img class="instance__image" src="./img/cat-slider-mobile.jpg" srcset="./img/cat-slider-mobile@2x.jpg"
+              alt="Внешний вид кота до участия в программе">
+          </picture>
         </div>
       </div>
     </section>
@@ -205,7 +204,7 @@
       </div>
       <div class="map">
         <h2 class="map__title">Мы на карте</h2>
-        <div class="map__wrapper map-wrapper">
+        <div class="map__wrapper">
           <iframe class="map__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659549166393!5m2!1sru!2sru"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -217,58 +216,41 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__home-link main-footer__item main-footer__item--brand" href="./index.html">
-        <picture>
-          <img class="main-footer__brand-image" src="./img/logo2-mobile.svg"
+      <a class="main-footer__home-link main-footer__item" href="./index.html">
+        <div class="main-footer__brand-image-wrapper">
+          <img class="main-footer__brand-image" src="./img/footer-logo.svg"
             alt="Текстовый логотип бренда Cat Energy. Представляет собой два слова Cat и Energy написанными печатными, прописными буквами, черного цвета на белом фоне. Первое слово написано, несколько, жирнее чем второе">
-        </picture>
-
-    </a>
+        </div>
+      </a>
       <div class="main-footer__item main-footer__item--social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
               <span>Перейти на страницу вконтакте</span>
-              <div class="social__icon-wrapper">
-                <picture>
-                  <img src="./img/social-vk.svg" alt="Логотип ВКонтакте">
-                </picture>
-              </div>
+              <img src="./img/social-vk.svg" alt="Логотип ВКонтакте">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube"
               href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank">
               <span>Перейти на ютуб-канал</span>
-              <div class="social__icon-wrapper">
-                <picture>
-                  <img src="./img/social-youtube.svg" alt="Логотип Youtube">
-                </picture>
-              </div>
+              <img src="./img/social-youtube.svg" alt="Логотип Youtube">
             </a>
 
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy" target="_blank">
               <span>Перейти в телеграм-канал</span>
-              <div class="social__icon-wrapper">
-                <picture>
-                  <img src="./img/social-telegram.svg" alt="Логотип Telegram">
-                </picture>
-              </div>
+              <img src="./img/social-telegram.svg" alt="Логотип Telegram">
             </a>
           </li>
         </ul>
       </div>
-      <div class="main-footer__item main-footer__item--production production">
+      <div class="main-footer__item production">
         <p class="production__brand">HTML Academy</p>
         <a class="production__link" href="https://htmlacademy.ru/" target="_blank">
           <span>Перейти на сайт разработчика</span>
-          <div class="social__icon-wrapper">
-            <picture>
-              <img src="./img/htmlacademy.svg" alt="Логотип HTML Academy">
-            </picture>
-          </div>
+          <img src="./img/htmlacademy.svg" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>

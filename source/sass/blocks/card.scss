@@ -63,6 +63,17 @@
   }
 }
 
+// Пока так
+.card__image {
+  @media (min-width: $tablet-width) {
+    transform: scale(4);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: none;
+  }
+}
+
 .card__text::after {
   display: block;
   margin-top: 23px;

@@ -59,6 +59,25 @@
   }
 }
 
+.main-nav__list--index {
+  .main-nav__item {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
+  }
+
+  .main-nav__item--active::before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      top: 27px;
+    }
+  }
+}
+
 .main-nav__item {
   position: relative;
   padding: 22px 20px 24px;
@@ -110,23 +129,6 @@
 
 .main-nav__item:active {
   opacity: 0.6;
-}
-
-.main-nav__item--overlay {
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
-}
-
-.main-nav__item--overlay-active::before {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    top: 27px;
-  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
