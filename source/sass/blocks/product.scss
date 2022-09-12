@@ -27,7 +27,7 @@
 
     display: grid;
     column-gap: 60px;
-    row-gap: 60px;
+    row-gap: 141px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -47,9 +47,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include container;
-  padding-top: 19px;
-  padding-bottom: 36px;
+  padding: 19px 20px 36px;
 
   border-top: 1px solid #e6e6e6;
 
@@ -72,17 +70,38 @@
 
   text-align: center;
 
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
     width: inherit;
   }
 }
 
+.product__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    transform: translate(-50%, -25%);
+  }
+}
+
+.product__image--large {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    transform: translate(-50%, -33%);
+  }
+}
+
 .product__text {
   margin-bottom: 13px;
-
   min-width: 140px;
-
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 161px;
+  }
 }
 
 .product__name {

@@ -16,6 +16,14 @@
   padding: 19px 12px;
 }
 
+.production__link:hover {
+  stroke: #68b738;
+}
+
+.production__link:active {
+  opacity: 0.3;
+}
+
 .production__link span {
   @include visually-hidden;
 }

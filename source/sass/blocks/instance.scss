@@ -1,9 +1,5 @@
 .instance {
   background-color: #eaeaea;
-
-  @media (min-width: $tablet-width) {
-    background-color: #ffffff;
-  }
 }
 
 .instance__text-container {
@@ -11,11 +7,38 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 200px;
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+
+    padding: 0;
+
+    background-color: #eaeaea;
+  }
+}
+
+.instance__title {
+  @include section-title;
+  @include container;
+  box-sizing: border-box;
+  text-transform: none;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 43px;
+    padding-bottom: 63px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding-left: 110px;
   }
 }
 
@@ -27,29 +50,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include container;
     display: flex;
     justify-content: space-between;
 
     background-color: #eaeaea;
-  }
-}
-
-.instance__title {
-  @include section-title;
-  @include container;
-  text-transform: none;
-  padding-top: 25px;
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    margin-top: 43px;
-    margin-bottom: 63px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
   }
 }
 

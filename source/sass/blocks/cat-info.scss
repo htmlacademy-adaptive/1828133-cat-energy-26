@@ -14,8 +14,8 @@
   @include form-row;
 }
 
-.cat-info__row + .cat-info__row {
-  margin-top: 14px;
+.cat-info__row:not(:last-child){
+  margin-bottom: 14px;
 }
 
 .cat-info__label {

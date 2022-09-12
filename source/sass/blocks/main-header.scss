@@ -1,6 +1,4 @@
 .main-header {
-  @include container;
-
   margin: 0 auto;
 
   height: 65px;
@@ -15,6 +13,7 @@
 }
 
 .main-header__wrapper {
+  @include container;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +24,18 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 50px;
+  }
+}
+
+.main-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
   }
 }
 

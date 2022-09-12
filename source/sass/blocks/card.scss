@@ -116,6 +116,18 @@
   }
 }
 
+.card__icon {
+  overflow: unset;
+
+  @media (min-width: $tablet-width) {
+    scale: 3.92;
+  }
+
+  @media (min-width: $desktop-width) {
+    scale: 1;
+  }
+}
+
 .card__text {
   grid-column: 1 / 3;
   grid-row: 2 / 3;

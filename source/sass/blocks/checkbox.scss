@@ -13,9 +13,13 @@
 
     border-bottom: none;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
-.checkbox-row {
+.checkbox__row {
   @include form-row;
   margin-bottom: 13px;
 

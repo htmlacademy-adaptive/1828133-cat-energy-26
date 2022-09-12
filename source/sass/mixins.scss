@@ -137,7 +137,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -149,20 +150,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0;
   }
 }
-
-// @mixin form__fieldset-wrapper {
-//   display: flex;
-//   flex-direction: column;
-
-//   border-bottom: 1px solid #d9d9d9;
-
-//   @media (min-width: $tablet-width) {
-//     border-bottom: none;
-//   }
-// }
 
 @mixin form-row {
   display: flex;

@@ -16,8 +16,8 @@
   @include form-row;
 }
 
-.radio__row + .radio__row {
-  margin-top: 13px;
+.radio__row:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .radio__label {

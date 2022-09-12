@@ -20,3 +20,11 @@
 .social__link span {
   @include visually-hidden;
 }
+
+.social__link:hover {
+  stroke: #68b738;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
