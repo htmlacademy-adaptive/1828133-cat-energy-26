@@ -13,33 +13,45 @@
   }
 }
 
-.client-contacts__row + .client-contacts__row {
-  margin-top: 13px;
+.client-contacts__row:not(:last-child) {
+  margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .client-contacts__label {
   margin-right: 13px;
 }
 
-.client-contacts__input {
+.client-contacts__input-wrapper {
+  position: relative;
   flex-grow: 1;
+  display: flex;
 
-  padding: 13px 0 13px 15px;
+  border: 1px solid #ececec;
+}
 
-  border: 1px solid #e7e7e7;
+.client-contacts__input-wrapper:focus-within {
+  .client-contacts-icon-wrapper {
+    color: #68b738;
+    stroke: #68b738;
+  }
+}
+
+.client-contacts__input {
+  width: 100%;
+  padding: 13px 15px;
+
+  border: none;
 
   @include text-oswald-regular;
 }
 
-.client-contacts__input:hover {
-  border-color: #cdcdcd;
-}
-
-.client-contacts__input:focus {
-  border-color: #444444;
-}
-
-// непонятно вот здесь
-.client-contacts__input:focus:invalid {
-  border-color: #ff8282;
+.client-contacts-icon-wrapper {
+  position: absolute;
+  right: 16px;
+  align-self: center;
+  color: #222222;
 }

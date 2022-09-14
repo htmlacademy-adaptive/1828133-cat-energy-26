@@ -1,3 +1,8 @@
+.form {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .form__header {
   @include form-container;
   @include header-h1;

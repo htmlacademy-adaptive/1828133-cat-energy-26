@@ -116,6 +116,32 @@
   }
 }
 
+.card__icon {
+  overflow: unset;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
+}
+
+.card__icon--large {
+  overflow: unset;
+
+  @media (min-width: $tablet-width) {
+    height: 112px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 56px;
+  }
+}
+
 .card__text {
   grid-column: 1 / 3;
   grid-row: 2 / 3;

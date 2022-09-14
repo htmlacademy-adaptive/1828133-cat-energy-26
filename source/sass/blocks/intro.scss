@@ -104,7 +104,7 @@
 
 .intro__product-wrapper {
   position: absolute;
-  top: 35%;
+  top: 55%;
   left: 50%;
   transform: translate(-140px, -60px);
 
@@ -138,6 +138,11 @@
 
   @media (min-width: $tablet-width) {
     top: 48%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: fit-content;
+    left: 15%;
   }
 }
 
