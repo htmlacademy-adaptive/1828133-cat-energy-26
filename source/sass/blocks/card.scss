@@ -120,11 +120,25 @@
   overflow: unset;
 
   @media (min-width: $tablet-width) {
-    scale: 3.92;
+    width: 140px;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
-    scale: 1;
+    width: 70px;
+  }
+}
+
+.card__icon--large {
+  overflow: unset;
+
+  @media (min-width: $tablet-width) {
+    height: 112px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 56px;
   }
 }
 

@@ -34,7 +34,7 @@
 }
 
 .client-contacts__input-wrapper:focus-within {
-  .client-contacts--icon-wrapper {
+  .client-contacts-icon-wrapper {
     color: #68b738;
     stroke: #68b738;
   }
@@ -49,15 +49,9 @@
   @include text-oswald-regular;
 }
 
-.client-contacts--icon-wrapper{
+.client-contacts-icon-wrapper{
 position: absolute;
 right: 16px;
 align-self: center;
 color: #222222;
 }
-
-.client-contacts--icon {
-  display: block;
-}
-
-
