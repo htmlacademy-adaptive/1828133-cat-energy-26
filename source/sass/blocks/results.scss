@@ -60,15 +60,7 @@
   line-height: 12px;
   text-transform: lowercase;
 
-  background-color: #eaeaea;
-
-  @media (min-width: $tablet-width) {
-    background-color: #ffffff;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: #eaeaea;
-  }
+  background-color: inherit;
 }
 
 .results__cost {

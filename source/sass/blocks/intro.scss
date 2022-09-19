@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding-left: 89px;
+
     padding-bottom: 0;
 
     background-image: none;
@@ -104,9 +104,9 @@
 
 .intro__product-wrapper {
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-140px, -60px);
+
+  top: 240px;
+  left: 10px;
 
   @media (min-width: $tablet-width) {
     position: static;

@@ -35,11 +35,6 @@
     column-gap: 80px;
     grid-template-columns: repeat(4, 1fr);
   }
-
-  @media (min-width: 1600px) {
-    column-gap: 80px;
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
 
 .product__item {
