@@ -46,6 +46,12 @@
 }
 
 .checkbox__label:hover {
+  .checkbox__text::before {
+    border-color: #bababa;
+  }
+}
+
+.checkbox__label:disabled {
   opacity: 0.3;
 }
 
@@ -85,4 +91,5 @@
 
 .checkbox__input:checked ~ .checkbox__text::after {
   display: block;
+  opacity: 1;
 }

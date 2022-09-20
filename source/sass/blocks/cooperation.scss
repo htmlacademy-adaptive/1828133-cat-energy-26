@@ -4,7 +4,6 @@
 
 .cooperation__wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   @include container;
@@ -14,8 +13,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 56px;
+    padding: 60px 70px 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +21,7 @@
     min-width: 565px;
     width: fit-content;
     background-color: #ffffff;
-    transform: translate(20%, 100%);
+    transform: translate(340px, 95px);
   }
 }
 
@@ -48,6 +46,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 30px;
     padding-right: 30px;
+    width: fit-content;
   }
 }
 
@@ -58,6 +57,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .cooperation__address {
@@ -68,6 +72,14 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    width: 160px;
+
     text-align: end;
+    font-size: 16px;
+
+    span {
+      margin-top: 17px;
+      display: block;
+    }
   }
 }

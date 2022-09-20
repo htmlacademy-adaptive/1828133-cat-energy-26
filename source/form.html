@@ -9,12 +9,14 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper"><a class="main-header__home-link">
+    <div class="main-header__wrapper">
+      <a class="main-header__home-link" href="./index.html">
         <div class="main-header__logo-wrapper">
           <picture>
             <source media="(min-width: 768px)" srcset="./img/logo-desktop.svg"><img class="main-header__logo-image"
@@ -90,7 +92,7 @@
         </div>
       </div>
       <fieldset class="form__fieldset cat-habit"><textarea class="cat-habit__textarea"
-          placeholder="Расскажите обо всех повадках кота" rows="10"></textarea></fieldset>
+          placeholder="Расскажите обо всех повадках кота" rows="8"></textarea></fieldset>
       <div class="green-line">
         <div class="green-line-container">
           <h2 class="form__title green-line__title">Дополнительно</h2>

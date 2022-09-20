@@ -2,21 +2,13 @@
   margin: 0 auto;
 
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
 }
 
 .intro__wrapper {
   @include container;
 
-  margin-bottom: 135px;
-  padding-top: 27px;
+  margin-bottom: 137px;
+  padding-top: 29px;
   padding-bottom: 20px;
   background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-mobile.jpg");
   background-repeat: no-repeat;
@@ -72,12 +64,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 41px;
-    margin-top: 62px;
+    margin-top: 70px;
+    padding-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
-    margin-top: 111px;
+    margin-top: 159px;
+    padding-left: 79px;
   }
 }
 
@@ -92,6 +85,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    padding-left: 89px;
 
     font-size: 20px;
     line-height: 20px;
@@ -99,14 +93,15 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    padding-left: 0;
   }
 }
 
 .intro__product-wrapper {
   position: absolute;
 
-  top: 240px;
-  left: 10px;
+  top: 234px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -137,12 +132,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 48%;
+    top: 43%;
+    left: 15.5%;
   }
 
   @media (min-width: $desktop-width) {
     width: fit-content;
-    left: 15%;
+    top: 45%;
+    left: 13%;
   }
 }
 
@@ -150,11 +147,14 @@
   @include button-green;
   display: block;
 
-  padding: 7px 44px;
+  padding: 9px 44px;
 
   text-decoration: none;
 
+  font-size: 14px;
+
   @media (min-width: $tablet-width) {
-    padding: 15px 46px;
+    padding: 11px 23px;
+    font-size: 21px;
   }
 }

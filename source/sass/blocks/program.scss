@@ -1,7 +1,6 @@
 .program {
   @include container;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 18px 22px;
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
@@ -23,6 +22,10 @@
 
 .program__card + .program__card {
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;

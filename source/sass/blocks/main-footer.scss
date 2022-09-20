@@ -19,7 +19,11 @@
 
 .main-footer__home-link {
   display: block;
-  padding: 33px 0;
+  padding: 39px 0 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
 }
 
 .main-footer__home-link:hover {

@@ -6,14 +6,24 @@
 
 .production__brand {
   margin: 0;
+  padding-bottom: 7px;
 
   @include text-arial-regular;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    padding-right: 23px;
+  }
 }
 
 .production__link {
-  padding: 19px 12px;
+  padding: 21px 0px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+  }
 }
 
 .production__link:hover {

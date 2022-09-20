@@ -26,9 +26,13 @@
   display: flex;
   flex-direction: column;
 
-  width: 124px;
+  min-width: 124px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
 }
 
 .results__item + .results__item {
@@ -39,7 +43,7 @@
 
 .results__number {
   margin: 0;
-  padding: 15px 20px 18px;
+  padding: 13px 20px 18px;
 
   border: 1px solid #cdcdcd;
 
@@ -47,25 +51,42 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .results__text {
   position: relative;
   transform: translateY(-50%);
   margin: 0 auto;
-  width: 70%;
+  width: 65%;
 
   @include text-arial-regular;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
 
-  background-color: inherit;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+
+    background-color: #ffffff;
+
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
 
 .results__cost {
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 9px auto;
+  margin-bottom: 20px;
 
   font-size: 14px;
   line-height: 20px;
@@ -73,11 +94,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 8px;
     width: 180px;
     text-align: end;
 
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 21px;
+    line-height: 28px;
   }
 
   @media (min-width: $desktop-width) {

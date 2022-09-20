@@ -30,6 +30,8 @@
   border: 1px solid #e7e7e7;
 
   @include text-oswald-regular;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .cat-info__input:hover {
