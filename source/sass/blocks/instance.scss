@@ -20,7 +20,7 @@
   @include container;
   box-sizing: border-box;
   text-transform: none;
-  padding: 27px 0px 42px;
+  padding: 27px 0 42px;
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 63px;
