@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 40px 42px;
+    padding: 11px 32px 42px;
     background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
       url("../img/special-offer-background-desktop.jpg");
     flex-direction: column;
@@ -76,6 +76,6 @@
 
 .special-offer__icon {
   @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    padding-top: 45px;
   }
 }

@@ -125,6 +125,10 @@
   }
 }
 
+.product-extra__clarification {
+  margin-left: 10px;
+}
+
 .product-extra__button {
   @include button-green;
   @include text-oswald-regular;

@@ -39,6 +39,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    padding-bottom: 80px;
     column-gap: 80px;
     grid-template-columns: repeat(4, 1fr);
   }

@@ -26,6 +26,10 @@
 }
 
 .radio__label:hover {
+  cursor: pointer;
+}
+
+.radio__label:disabled {
   opacity: 0.3;
 }
 

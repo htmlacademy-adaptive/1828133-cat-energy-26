@@ -11,7 +11,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    background-image: linear-gradient(#ffffff 300px, #eeeeee 300px 100%);
+    padding-bottom: 29px;
+    background-image: linear-gradient(#ffffff 145px, #eeeeee 145px 100%);
   }
 }
 
@@ -27,6 +28,11 @@
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 0;
   }
 }
 
@@ -54,7 +60,7 @@
     flex-direction: column;
 
     padding: 0;
-    padding-top: 220px;
+    padding-top: 150px;
   }
 }
 
@@ -70,12 +76,21 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 456px;
+    margin-bottom: 66px;
+  }
 }
 
 .instance__image-wrapper {
   @media (min-width: $tablet-width) {
     min-height: 462px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -58px;
   }
 }
 

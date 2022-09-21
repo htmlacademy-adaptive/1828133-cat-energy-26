@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -200px;
     min-width: 1440px;
     height: 400px;
     background-image: url("../img/location-desktop.png");

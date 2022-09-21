@@ -46,6 +46,8 @@
 }
 
 .checkbox__label:hover {
+  cursor: pointer;
+
   .checkbox__text::before {
     border-color: #bababa;
   }
