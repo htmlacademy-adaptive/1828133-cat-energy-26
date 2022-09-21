@@ -1,53 +1,27 @@
-.cooperation {
-  background-color: #f2f2f2;
+.cooperation__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    top: 100px;
+  }
 }
 
-.cooperation__wrapper {
+.cooperation__info {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
-  @include container;
-  padding-top: 26px;
-  padding-bottom: 26px;
-
-  background-color: #ffffff;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 56px;
+    padding: 56px 70px 55px;
   }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    min-width: 565px;
-    width: fit-content;
-    background-color: #ffffff;
-    transform: translate(20%, 100%);
-  }
-}
-
-.cooperation__wrapper--gray {
-  background-color: #f2f2f2;
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
-  }
-}
-
-.cooperation__wrapper--form {
-  @include form-container;
-  padding-top: 26px;
-  padding-bottom: 26px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 56px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 565px;
+    box-sizing: border-box;
+    padding: 54px 80px 60px;
   }
 }
 
@@ -58,6 +32,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .cooperation__address {
@@ -68,6 +47,18 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    width: 160px;
+
     text-align: end;
+    font-size: 16px;
+
+    span {
+      margin-top: 17px;
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }

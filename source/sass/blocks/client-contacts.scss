@@ -1,6 +1,14 @@
 .client-contacts {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    margin-bottom: 65px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+
     justify-content: space-between;
   }
 }
@@ -14,7 +22,11 @@
 }
 
 .client-contacts__row:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
@@ -22,15 +34,21 @@
 }
 
 .client-contacts__label {
-  margin-right: 13px;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .client-contacts__input-wrapper {
   position: relative;
   flex-grow: 1;
   display: flex;
+}
 
-  border: 1px solid #ececec;
+.client-contacts__input-wrapper:hover {
+  border: none;
 }
 
 .client-contacts__input-wrapper:focus-within {
@@ -42,16 +60,49 @@
 
 .client-contacts__input {
   width: 100%;
-  padding: 13px 15px;
+  padding: 13px 50px 13px 15px;
 
-  border: none;
+  border: 1px solid #e7e7e7;
+  outline: none;
 
   @include text-oswald-regular;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 50px 9px 15px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.client-contacts__input:hover {
+  border-color: #cdcdcd;
+}
+
+.client-contacts__input:focus {
+  border: 2px solid #444444;
+
+  padding: 12px 49px 12px 14px;
+}
+
+.client-contacts__input:invalid {
+  border: 2px solid #ff8282;
+  padding: 13px 50px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 50px 9px 15px;
+  }
+}
+
+.client-contacts__input:invalid:placeholder-shown {
+  border-color: #e7e7e7;
 }
 
 .client-contacts-icon-wrapper {
   position: absolute;
-  right: 16px;
+  right: 15px;
   align-self: center;
   color: #222222;
 }

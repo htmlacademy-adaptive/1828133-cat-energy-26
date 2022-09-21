@@ -1,14 +1,18 @@
 .instance {
   @include container;
   background-color: #eaeaea;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 95px;
+
     background-image: linear-gradient(#ffffff 620px, #eeeeee 620px 100%);
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    background-image: linear-gradient(#ffffff 300px, #eeeeee 300px 100%);
+    padding-bottom: 29px;
+    background-image: linear-gradient(#ffffff 145px, #eeeeee 145px 100%);
   }
 }
 
@@ -17,14 +21,18 @@
   @include container;
   box-sizing: border-box;
   text-transform: none;
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding: 27px 0 42px;
 
   @media (min-width: $tablet-width) {
+    padding: 43px 0 63px;
+
     font-size: 60px;
     line-height: 60px;
-    padding-top: 43px;
-    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 0;
   }
 }
 
@@ -52,7 +60,7 @@
     flex-direction: column;
 
     padding: 0;
-    padding-top: 220px;
+    padding-top: 150px;
   }
 }
 
@@ -63,8 +71,15 @@
   @include text-arial-regular;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 456px;
+    margin-bottom: 66px;
   }
 }
 
@@ -73,10 +88,13 @@
     min-height: 462px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -58px;
+  }
 }
 
 .instance__image {
   display: block;
   margin: 0 auto;
-  padding-bottom: 100px;
 }

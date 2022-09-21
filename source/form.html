@@ -9,12 +9,15 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper"><a class="main-header__home-link">
+    <div class="main-header__wrapper">
+      <a class="main-header__home-link" href="./index.html">
         <div class="main-header__logo-wrapper">
           <picture>
             <source media="(min-width: 768px)" srcset="./img/logo-desktop.svg"><img class="main-header__logo-image"
@@ -49,10 +52,12 @@
               class="cat-info__input" type="text" id="age-input" placeholder="7"></div>
         </div>
         <div class="radio">
-          <div class="radio__row"><label class="radio__label">
-              <!--Костыль с высотой строки для центровки текста  относительно кружка--> <input class="radio__input"
-                type="radio" name="program" checked="checked"> <span class="radio__text">Похудение</span>
-            </label></div>
+          <div class="radio__row">
+            <label class="radio__label">
+              <input class="radio__input" type="radio" name="program" checked="checked">
+              <span class="radio__text">Похудение</span>
+            </label>
+          </div>
           <div class="radio__row"><label class="radio__label"><input class="radio__input" type="radio" name="program">
               <span class="radio__text">Набор массы</span></label></div>
           <div class="radio__row"><label class="radio__label"><input class="radio__input" type="radio" name="program">
@@ -90,7 +95,7 @@
         </div>
       </div>
       <fieldset class="form__fieldset cat-habit"><textarea class="cat-habit__textarea"
-          placeholder="Расскажите обо всех повадках кота" rows="10"></textarea></fieldset>
+          placeholder="Расскажите обо всех повадках кота" rows="8"></textarea></fieldset>
       <div class="green-line">
         <div class="green-line-container">
           <h2 class="form__title green-line__title">Дополнительно</h2>
@@ -112,9 +117,11 @@
       </div>
     </form>
     <section class="cooperation">
-      <div class="cooperation__wrapper cooperation__wrapper--gray cooperation__wrapper--form">
-        <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
-        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="cooperation__wrapper">
+        <div class="cooperation__info">
+          <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
+          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </div>
       </div>
       <div class="map">
         <h2 class="map__title">Мы на карте</h2>
