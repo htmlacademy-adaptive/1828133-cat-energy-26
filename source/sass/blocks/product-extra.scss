@@ -49,13 +49,13 @@
 }
 
 .product-extra__item {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 19px;
 
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 36px 28px;
+    padding: 24px 37px 28px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +76,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 
     @media (min-width: $desktop-width) {
       flex-grow: 1;
@@ -87,7 +87,7 @@
 }
 
 .product-extra__name {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 20px;
 
@@ -126,7 +126,10 @@
 }
 
 .product-extra__clarification {
-  margin-left: 10px;
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-top: 3px;
+  }
 }
 
 .product-extra__button {

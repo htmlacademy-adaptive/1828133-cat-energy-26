@@ -121,6 +121,10 @@
     background-color: #68b738;
     top: 31px;
   }
+
+  @media (min-width: $tablet-width) {
+    top: 34px;
+  }
 }
 
 .main-nav__item a {
@@ -193,4 +197,8 @@
 
 .main-nav__toggle span {
   @include visually-hidden;
+}
+
+.main-nav--nojs .main-nav__wrapper--closed {
+  display: block;
 }

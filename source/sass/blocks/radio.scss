@@ -8,7 +8,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 450px;
+    min-width: 568px;
+    box-sizing: border-box;
+    padding: 25px 27px;
   }
 }
 
@@ -18,6 +20,10 @@
 
 .radio__row:not(:last-child) {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .radio__label {
@@ -27,6 +33,10 @@
 
 .radio__label:hover {
   cursor: pointer;
+
+  .radio__text::before {
+    border-color: #bababa;
+  }
 }
 
 .radio__label:disabled {
@@ -41,6 +51,10 @@
   position: relative;
 
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .radio__text::before {
@@ -48,17 +62,22 @@
   position: absolute;
   left: 0;
 
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 39px;
+    height: 39px;
+  }
 }
 
 .radio__text::after {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 9px;
+  left: 9px;
+  top: 4px;
 
   width: 13px;
   height: 13px;
@@ -66,6 +85,13 @@
   background-color: #68b738;
 
   display: none;
+
+  @media (min-width: $tablet-width) {
+    left: 11px;
+    top: 9px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .radio__input:checked ~ .radio__text::after {
