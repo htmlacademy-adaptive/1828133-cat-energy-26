@@ -16,10 +16,10 @@
 }
 
 .cat-info__row:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 }
 
@@ -37,7 +37,6 @@
   padding: 13px 10px 13px 15px;
 
   border: 1px solid #e7e7e7;
-
   outline: none;
 
   @include text-oswald-regular;
@@ -45,7 +44,7 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 10px 13px 17px;
+    padding: 10px 10px 10px 17px;
 
     font-size: 20px;
     line-height: 30px;
@@ -57,16 +56,11 @@
 }
 
 .cat-info__input:focus {
-  border: 2px solid #444444;
-
-  padding: 12px 9px 12px 14px;
+  box-shadow: 0 0 1px 1px #444444;
+  border-color: #444444;
 }
 
 .cat-info__input:focus:invalid {
-  border: 2px solid #ff8282;
-  padding: 13px 10px 13px 15px;
-}
-
-.cat-info__input:focus:invalid:placeholder-shown {
-  border-color: #444444;
+  box-shadow: 0 0 1px 1px #ff8282;
+  border-color: #ff8282;
 }
