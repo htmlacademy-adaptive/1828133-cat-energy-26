@@ -66,9 +66,9 @@
   }
 }
 
-.checkbox__label:disabled {
-  opacity: 0.3;
-}
+.checkbox__input:disabled ~ .checkbox__text {
+    opacity: 0.3;
+  }
 
 .checkbox__input {
   @include visually-hidden;
@@ -125,7 +125,7 @@
   }
 }
 
-.checkbox__input:checked ~ .checkbox__text::after {
+.checkbox__input:checked~.checkbox__text::after {
   display: block;
   opacity: 1;
 }

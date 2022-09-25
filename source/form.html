@@ -26,8 +26,10 @@
           </picture>
         </div>
       </a>
-      <nav class="main-nav main-nav--closed"><button class="main-nav__toggle" type="button"><span>Открыть
-            меню</span></button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+          <span>Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper main-nav__wrapper--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="./index.html">Главная</a></li>
@@ -58,10 +60,19 @@
               <span class="radio__text">Похудение</span>
             </label>
           </div>
-          <div class="radio__row"><label class="radio__label"><input class="radio__input" type="radio" name="program">
-              <span class="radio__text">Набор массы</span></label></div>
-          <div class="radio__row"><label class="radio__label"><input class="radio__input" type="radio" name="program">
-              <span class="radio__text">Не знаю (Нужен ваш совет)</span></label></div>
+          <div class="radio__row">
+            <label class="radio__label">
+            <input class="radio__input" type="radio" name="program" disabled>
+            <!--намеренно показал состояние disabled для пункта набор массы.-->
+            <span class="radio__text">Набор массы</span>
+            </label>
+          </div>
+          <div class="radio__row">
+            <label class="radio__label">
+              <input class="radio__input" type="radio" name="program">
+              <span class="radio__text">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </div>
         </div>
       </fieldset>
       <div class="green-line">
@@ -102,17 +113,27 @@
         </div>
       </div>
       <fieldset class="form__fieldset checkbox">
-        <div class="checkbox__row"><label class="checkbox__label" for="sweetener"><input class="checkbox__input"
-              type="checkbox" id="sweetener" checked="checked"> <span
-              class="checkbox__text">Сахарозаменитель</span></label></div>
+        <div class="checkbox__row">
+          <label class="checkbox__label" for="sweetener">
+            <input class="checkbox__input"
+              type="checkbox" id="sweetener" checked="checked">
+              <span class="checkbox__text">Сахарозаменитель</span>
+          </label>
+        </div>
         <div class="checkbox__row"><label class="checkbox__label" for="drink-water"><input class="checkbox__input"
               type="checkbox" id="drink-water"> <span class="checkbox__text">Питьевая вода</span></label></div>
         <div class="checkbox__row"><label class="checkbox__label" for="milk"><input class="checkbox__input"
               type="checkbox" id="milk"> <span class="checkbox__text">Молоко</span></label></div>
-        <div class="checkbox__row"><label class="checkbox__label" for="vitamin"><input class="checkbox__input"
-              type="checkbox" id="vitamin"> <span class="checkbox__text">Витамины</span></label></div>
+        <div class="checkbox__row">
+          <label class="checkbox__label" for="vitamin">
+          <input class="checkbox__input" type="checkbox" id="vitamin" disabled>
+          <!--намеренно показал состояние disabled для пункта витамины.-->
+          <span class="checkbox__text">Витамины</span>
+          </label>
+        </div>
       </fieldset>
-      <div class="form-submit"><button class="form-submit__button" type="submit" name="submit__button">Отправить заявку</button>
+      <div class="form-submit"><button class="form-submit__button" type="submit" name="submit__button">Отправить
+          заявку</button>
         <div class="form-submit__footnote">* — Обязательные поля</div>
       </div>
     </form>
@@ -142,35 +163,31 @@
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
               target="_blank"><span>Перейти на страницу вконтакте</span>
-              <div class="social__icon-wrapper"><svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="./img/sprite.svg#vk-icon"></use>
-                </svg></div>
+              <svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#vk-icon"></use>
+              </svg>
             </a></li>
           <li class="social__item"><a class="social__link social__link--youtube"
               href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank"><span>Перейти на
                 ютуб-канал</span>
-              <div class="social__icon-wrapper"><svg width="24" height="19" viewBox="0 0 24 19" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="./img/sprite.svg#youtube-icon"></use>
-                </svg></div>
+              <svg width="24" height="19" viewBox="0 0 24 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#youtube-icon"></use>
+              </svg>
             </a></li>
           <li class="social__item"><a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy"
               target="_blank"><span>Перейти в телеграм-канал</span>
-              <div class="social__icon-wrapper"><svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="./img/sprite.svg#telegram-icon"></use>
-                </svg></div>
+              <svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#telegram-icon"></use>
+              </svg>
             </a></li>
         </ul>
       </div>
       <div class="main-footer__item production">
         <p class="production__brand">HTML Academy</p><a class="production__link" href="https://htmlacademy.ru/"
           target="_blank"><span>Перейти на сайт разработчика</span>
-          <div class="production__icon-wrapper"><svg width="27" height="34" viewBox="0 0 27 34" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#html-academy-icon"></use>
-            </svg></div>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/sprite.svg#html-academy-icon"></use>
+          </svg>
         </a>
       </div>
     </div>

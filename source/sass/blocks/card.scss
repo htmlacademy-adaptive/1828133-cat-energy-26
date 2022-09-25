@@ -3,7 +3,6 @@
   display: grid;
 
   grid-template-columns: 50px 155px;
-  grid-template-rows: 55px 135px 35px;
   column-gap: 21px;
 
   width: 280px;
@@ -14,7 +13,6 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 340px 200px;
-    grid-template-rows: 65px 150px 30px;
     column-gap: 55px;
     width: 100%;
 
@@ -23,7 +21,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 100px 300px;
-    grid-template-rows: 100px 114px 53px;
     column-gap: 62px;
 
     width: 570px;
