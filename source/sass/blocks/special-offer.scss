@@ -16,7 +16,7 @@
   text-align: center;
 
   background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-    url("../img/special-offer-background-mobile.jpg");
+    url("../img/special-offer-background-mobile.webp");
   background-color: rgba(#68b738, 0.85);
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-      url("../img/special-offer-background-mobile@2x.jpg");
+      url("../img/special-offer-background-mobile@2x.webp");
   }
 
 
@@ -34,25 +34,33 @@
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-      url("../img/special-offer-background-tablet.jpg");
+      url("../img/special-offer-background-tablet.webp");
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-        url("../img/special-offer-background-tablet@2x.jpg");
+        url("../img/special-offer-background-tablet@2x.webp");
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 11px 32px 42px;
+    padding: 64px 32px 42px;
     background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-      url("../img/special-offer-background-desktop.jpg");
+      url("../img/special-offer-background-desktop.webp");
     flex-direction: column;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-        url("../img/special-offer-background-desktop@2x.jpg");
+        url("../img/special-offer-background-desktop@2x.webp");
     }
   }
+}
+
+.special-offer__icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/icon-gift.svg");
 }
 
 .special-offer__text {

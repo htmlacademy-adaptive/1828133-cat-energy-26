@@ -1,7 +1,7 @@
 .map {
   min-width: 320px;
   height: 362px;
-  background-image: url("../img/location-mobile.png");
+  background-image: url("../img/location-mobile.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,14 +9,14 @@
   @media (min-width: $tablet-width) {
     min-width: 768px;
     height: 400px;
-    background-image: url("../img/location-tablet.png");
+    background-image: url("../img/location-tablet.webp");
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -200px;
     min-width: 1440px;
     height: 400px;
-    background-image: url("../img/location-desktop.png");
+    background-image: url("../img/location-desktop.webp");
   }
 }
 

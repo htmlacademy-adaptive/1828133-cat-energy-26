@@ -10,13 +10,13 @@
   margin-bottom: 137px;
   padding-top: 29px;
   padding-bottom: 20px;
-  background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-mobile.jpg");
+  background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-mobile.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-mobile@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
@@ -42,23 +42,26 @@
     background-color: rgba($color: #68b739, $alpha: 0.85);
     background-image:
       linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)),
-      url("../img/intro-background-desktop.jpg");
+      url("../img/intro-background-desktop.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-desktop@2x.jpg");
+      background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), url("../img/intro-background-desktop@2x.webp");
     }
   }
 }
 
 .intro__header {
   @include header-h1;
+  
 
   margin: 0;
   margin-bottom: 25px;
+  max-width: 500px;
+  word-break: break-all;
 
   @include intro-text-color();
 
@@ -149,10 +152,12 @@
 .intro__button {
   @include button-green;
   display: block;
-
+  max-width: 250px;
+  
   padding: 9px 44px;
 
   text-decoration: none;
+  word-break: break-all;
 
   font-size: 14px;
 
@@ -164,6 +169,6 @@
 }
 
 .intro__button-link {
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
 }

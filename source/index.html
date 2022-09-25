@@ -26,10 +26,10 @@
         </div>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
           <span>Открыть
             меню</span>
-          </button>
+        </button>
         <div class="main-nav__wrapper main-nav__wrapper--closed">
           <ul class="main-nav__list main-nav__list--index">
             <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
@@ -120,11 +120,11 @@
           <div class="instance__results results">
             <div class="results__items-wrapper">
               <div class="results__item">
-                <p class="results__number"><b>5 кг</b></p>
+                <p class="results__number">5 кг</p>
                 <p class="results__text">снижение веса</p>
               </div>
               <div class="results__item">
-                <p class="results__number"><b>60 дней</b></p>
+                <p class="results__number">60 дней</p>
                 <p class="results__text">затрачено времени</p>
               </div>
             </div>
@@ -133,8 +133,8 @@
         </div>
         <div class="instance__image-wrapper">
           <picture>
-            <source media="(min-width: 768px)" srcset="./img/cat-slider-tablet.png, ./img/cat-slider-tablet@2x.png 2x">
-            <img class="instance__image" src="./img/cat-slider-mobile.png" srcset="./img/cat-slider-mobile@2x.png 2x"
+            <source media="(min-width: 768px)" srcset="./img/cat-slider-tablet.webp, ./img/cat-slider-tablet@2x.webp 2x">
+            <img class="instance__image" src="./img/cat-slider-mobile.webp" srcset="./img/cat-slider-mobile@2x.webp 2x"
               alt="Внешний вид кота до участия в программе">
           </picture>
           <div class="instance__slider"></div>
@@ -167,35 +167,31 @@
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
               target="_blank"><span>Перейти на страницу вконтакте</span>
-              <div class="social__icon-wrapper"><svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="./img/sprite.svg#vk-icon"></use>
-                </svg></div>
+              <svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#vk-icon"></use>
+              </svg>
             </a></li>
           <li class="social__item"><a class="social__link social__link--youtube"
               href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank"><span>Перейти на
                 ютуб-канал</span>
-              <div class="social__icon-wrapper"><svg width="24" height="19" viewBox="0 0 24 19" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="./img/sprite.svg#youtube-icon"></use>
-                </svg></div>
+              <svg width="24" height="19" viewBox="0 0 24 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#youtube-icon"></use>
+              </svg>
             </a></li>
           <li class="social__item"><a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy"
               target="_blank"><span>Перейти в телеграм-канал</span>
-              <div class="social__icon-wrapper"><svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="./img/sprite.svg#telegram-icon"></use>
-                </svg></div>
+              <svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#telegram-icon"></use>
+              </svg>
             </a></li>
         </ul>
       </div>
       <div class="main-footer__item production">
         <p class="production__brand">HTML Academy</p><a class="production__link" href="https://htmlacademy.ru/"
           target="_blank"><span>Перейти на сайт разработчика</span>
-          <div class="production__icon-wrapper"><svg width="27" height="34" viewBox="0 0 27 34" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#html-academy-icon"></use>
-            </svg></div>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/sprite.svg#html-academy-icon"></use>
+          </svg>
         </a>
       </div>
     </div>

@@ -39,7 +39,7 @@
   }
 }
 
-.radio__label:disabled {
+.radio__input:disabled ~ .radio__text {
   opacity: 0.3;
 }
 
@@ -49,6 +49,7 @@
 
 .radio__text {
   position: relative;
+  display: block;
 
   padding-left: 45px;
 
